@@ -1,0 +1,4 @@
+name = Fix
+description = A module that fixes stuff
+core = 7.x 
+package = Fixer

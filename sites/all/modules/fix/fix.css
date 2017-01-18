@@ -1,0 +1,19 @@
+/*
+#main-area{width:100%;}
+#content{
+	width:80% !important; 
+	padding:0px !important; 
+	margin:0px !important; 
+	}
+#sidebar-first
+{
+	width:20% !important; 
+	padding:0px !important; 
+	margin:0px !important; 
+}
+#main{width:100%;}
+*/
+#DataTables_Table_0 > thead > tr > th > a
+{
+	color:#10b4ef !important;
+}

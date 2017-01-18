@@ -1,0 +1,404 @@
+<?php
+
+/**
+ * Allow for arbitrary nodes to be paginated. administrators can set which
+ * nodes they wish to paginate, and the length of content required to split a
+ * node into pages. Alternatively, content creators can set manual break points
+ * if the content type is set to page manually.
+ *
+ */
+define('PAGINATION_DEFAULT', 0);  //  using default pager
+define('PAGINATION_DUAL', 1);     //  using default pager + toc display
+define('PAGINATION_TOC', 2);      //  using toc display
+define('PAGINATION_CUSTOM', 1);   //  using custom headers ex: [header = TITLE]
+define('PAGINATION_TAG', 2);      //  using tagged headers ex: <h3>TITLE</h3>
+define('PAGINATION_AUTO', 5);     //  using words per page
+
+
+/**
+ * Implementation of hook_menu().
+ *
+ */
+function pagination_menu()  {
+  $menu['admin/config/content/pagination']  =  array(
+    'title'            => 'Pagination',
+    'description'      => 'Allow for arbitrary nodes to be paginated.',
+    'page callback'    => 'drupal_get_form',
+    'page arguments'   => array('pagination_admin_settings'),
+    'access arguments' => array('administer site configuration'),
+    'file'             => 'pagination.admin.inc',
+  );
+  return $menu;
+}
+
+
+/**
+ * Implementation of hook_help().
+ *
+ */
+function pagination_help($path, $arg)  {
+
+  switch ($path)  {
+
+    case 'admin/config/content/pagination':
+      $output  = '<p>' . t('Each node type (<em>Page</em>, <em>Story</em>, etc...) may be set to paginate automatically (separated by an arbitrary number of words per page), or manually, by using either custom page breaks within your content, or @tag tags.', array('@tag' => '<h3>') ) . '</p>';
+      $output .= '<ul>';
+      $output .= '<li><strong>' . t('Default paging') . '</strong>: ' . t("Use Drupal's default pager to show pagination.") . '</li>';
+      $output .= '<li><strong>' . t('Table of contents') . '</strong>: ' . t('Use a table of contents to show pagination.') . '</li>';
+      $output .= '<li><strong>' . t('Default + ToC') . '</strong>: ' . t('Display default pager and table of contents.') . '</li>';
+      $output .= '</ul>';
+      $output .= '<p>' . t('In addition, the table of contents may be displayed as a <a href="!url">block</a>.', array('!url' => url('admin/structure/block') ) ) . '</p>';
+      return $output;
+      break;
+
+    case 'admin/help#pagination':
+      $output  = '<p>' . t('Pagination allows the main content of arbitrary node types (<em>Page</em>, <em>Story</em>, etc...) to be paginated according to one of three methods:') . '</p>';
+      $output .= '<ul>';
+      $output .= '<li><strong>' . t('Method 1') . '</strong>: ' . t('Content is paginated by a selectable "words per page" count.') . '</li>';
+      $output .= '<li><strong>' . t('Method 2') . '</strong>: ' . t('Content is paginated by manual breaks, inserted by the content creator.') . '</li>';
+      $output .= '<li><strong>' . t('Method 3') . '</strong>: ' . t('Content is paginated by manual breaks, based on @h3 tags.', array('@h3' => '<h3>') ) . '</li>';
+      $output .= '</ul>';
+      $output .= '<p>' . t('Method 1 allows for quick and easy pagination, and is ideal for users who are looking to have their longer content split into multiple pages with the least amount of hassle. Just select the "words per page" threshold for a particular content type, and all existing and future nodes of that type will be automatically paginated accordingly.') . '</p>';
+      $output .= '<p>' . t('Methods 2 and 3 allow for fine-tuned control over pagination breaks, useful for content creators who need to set specific break points in their content. Method 2 paginates content based on the presence of break tags ([pagebreak] or [ header = SOME TITLE ]), whereas Method 3 paginates based on @h3 elements.', array('@h3' => '<h3>') ) . '</p>';
+      $output .= '<p>' . t('note: To use Method 3 pagination, make sure @h3 tags are allowed under the <a href="!url">text formats</a> configuration options.', array('@h3' => '<h3>', '!url' => url('admin/config/content/formats') ) ) . '</p>';
+
+      $output .= '<h3>' . t('Pager Display') . '</h3>';
+      $output .= '<p>' . t('Pagination offers two styles of pager display. The default display uses Drupal\'s pagination, which shows as a collection of page numbers, including typical pager controls (such as <em>next page</em>, <em>previous page</em>, etc...). In addition to that, Pagination allows administrators to utilize a "Table of Contents" style list, which creates an index of pages, mapped to an optional page name. Content types may be adjusted to display the default pager, the table of contents pager, or both simultaneously.') . '</p>';
+      $output .= '<p>' . t('The "Table of Contents" may also be displayed as a block') . '</p>';
+
+      $output .= '<h3>' . t('Page Headings') . '</h3>'; 
+      $output .= '<p>' . t('If a particular Content type is set to display a "Table of Contents" style list, page headings may be added for each page under any method. Methods 2 and 3 offer the more straight forward approaches, as content creators can add the page heading specifically in the page break: <em>ie. [ header = Sample Page Header ] or @h3Sample Page Header@h3end</em>. Regardless of paging method chosen, pages which do not have a specific title set will default to "<em>Page x</em>" within the table of contents. The only exception is the first page, which will always be the original title of the content.', array('@h3' => '<h3>', '@h3end' => '</h3>') ) . '</p>';
+      $output .= '<p>' . t('To set page titles under method 1, content creators may enter a collection of page titles while creating / updating their content. The interface will show the expected number of pages the content will have, and content creators may add a page titles (one per line) to match that number. The page estimate will be updated periodically while content is being added or updated.') . '</p>';
+
+      $output .= '<h3>' . t('Theming Notes') . '</h3>';
+      $output .= '<p>' . t('The default pager will respect alterations via a theme_pager() override. The table of contents may likewise be modified. Table of contents links are handled through theme_item_list(). In addition, the ToC may be modified by the presence of a toc.tpl.php file in your theme. The ToC is a container (<em>class="pagination-toc"</em>), while the ToC menu may be styled based on their respective classes (<em>class="pagination-toc-list"</em> and <em>class="pagination-toc-item"</em>).') . '</p>';
+      return $output;
+      break;
+  }
+}
+
+
+/**
+ *  Implementation of hook_theme().
+ *
+ */
+function pagination_theme($existing, $type, $theme, $path) {
+
+  $items['pagination_toc'] = array(
+    'variables' => array(
+      'toc'   => NULL,
+      'title' => NULL,
+      'pages' => array(),
+    ),
+    'template' => 'toc',
+    'path'     => $path . '/theme',
+  );
+  $items['pagination_admin_settings'] = array(
+    'render element' => 'form',
+  );
+
+  return $items;
+
+}
+
+
+/**
+ * Theme function for the admin settings form.
+ *
+ * @see pagination_admin_settings()
+ *
+ */
+function theme_pagination_admin_settings($variables) {
+  $form = $variables['form'];
+  $form['#theme'] = NULL;
+
+  $header = array(t('Content type'), t('Pagination'), t('Pagination style') );
+  $rows   = array();
+
+  foreach($form as $type => $cell)  {
+    if (is_array($cell) && isset($cell['pagination']) && is_array($cell['pagination']) )  {
+      $rows[] = array($type, drupal_render($cell['pagination']), drupal_render($cell['style']) );
+      unset($form[$type]);
+    }
+  }
+  $output  = theme('table', array('header' => $header, 'rows' => $rows) );
+  $output .= drupal_render($form);
+  return $output;
+}
+
+
+/**
+ * Implementation of hook_block_info().
+ *
+ */
+function pagination_block_info() {
+
+  $blocks['toc'] = array(
+    'info' => t('Table of Contents - Pagination'),
+  );
+  return $blocks;
+
+}
+
+
+/**
+ * Implementation of hook_block_view().
+ *
+ */
+function pagination_block_view($delta = '') {
+
+  if ($delta != 'toc' || drupal_is_front_page() ) {
+    return;
+  }
+
+  $block = NULL;
+  $nid   = arg(1);
+  if (arg(0) == 'node' && is_numeric($nid) )  {
+    $pg = Pagination::instance();
+    if ($pg->getPageCount() > 1 && $pg->getPageVar() !== 'show')  {
+      $block = array(
+        'subject' => t('Table of Contents'),
+        'content' => $pg->getToc($nid, TRUE),
+      );
+    }
+  }
+  return $block;
+
+}
+
+
+/**
+ * Implementation of hook_node_delete()
+ *
+ */
+function pagination_node_delete($node) {
+
+  $pg     = Pagination::instance();
+  $style  = $pg->getStyle($node->type);
+  $paging = $pg->getValue($node->type);
+
+  if ($paging > PAGINATION_AUTO && $style > PAGINATION_DEFAULT) {
+    db_delete('node_pagination')
+      ->condition('nid', $node->nid, '=')
+      ->execute();
+  }
+
+}
+
+
+/**
+ * Implementation of hook_node_presave()
+ *
+ */
+function pagination_node_presave($node) {
+
+  module_invoke('pagination', 'node_delete', $node);
+
+  if (!empty($node->pagination_headers) ) {
+    $headers = explode("\n", str_replace("\r\n", "\n", $node->pagination_headers) );
+    $fields  = array(
+      'nid'     => $node->nid,
+      'headers' => serialize($headers),
+    );
+    db_insert('node_pagination')
+      ->fields($fields)
+      ->execute();
+  }
+
+}
+
+
+/**
+ * Implementation of hook_node_validate()
+ *
+ */
+function pagination_node_validate($node, $form, &$form_state) {
+
+  $pg     = Pagination::instance();
+  $style  = $pg->getStyle($node->type);
+  $paging = $pg->getValue($node->type);
+
+  if ($paging > PAGINATION_AUTO and $style > PAGINATION_DEFAULT)  {
+    drupal_add_js(drupal_get_path('module', 'pagination') . '/js/pagination.js');
+  }
+
+}
+
+
+/**
+ * Implementation of hook_node_view()
+ *
+ */
+function pagination_node_view($node, $view_mode, $langcode) {
+
+  $pg     = Pagination::instance();
+  $page   = $pg->getPageVar();
+  $paging = $pg->getValue($node->type);
+  $style  = $pg->getStyle($node->type);
+  $ignore = array_map('trim', explode(',', variable_get('pagination_ignore', '') ) );
+
+  if ($paging && $view_mode == 'full' && $page !== 'show' && empty($node->in_preview) && !in_array($node->nid, $ignore, TRUE) )    {
+    $pg->paginate($node->content['body'][0]['#markup'], $paging);
+    $node->content['body'][0]['#markup'] = $pg->getPage($page);
+
+    if ($style < PAGINATION_TOC)  {
+      $node->content['pagination_pager'] = array(
+        '#weight' => 50,
+        '#markup' => $pg->getPager(),
+      );
+    }
+
+    if ($style > PAGINATION_DEFAULT && $pg->getPageCount() > 1)  {
+      $node->content['pagination_toc'] = array(
+        '#weight' => -50,
+        '#markup' => $pg->getToc($node->nid),
+      );
+    }
+  }
+
+  if ($paging) {
+    $node->content['body'][0]['#markup'] = preg_replace($pg->re_custom, '', $node->content['body'][0]['#markup']);
+  }
+
+  $count    = $pg->getPageCount();
+  $showfull = variable_get('pagination_showall', 1);
+
+  if ($paging && $view_mode == 'full' && $showfull && ($count > 1 || $page === 'show') ) {
+    $query = ($page !== 'show') ? array('page' => 'show') : array();
+    $title = ($page !== 'show') ? t('Show full page') : t('Show paged');
+    $class = ($page !== 'show') ? array('pagination-show-full-page') : array('pagination-show-paged');
+
+    $node->content['links']['node']['#links']['pagination-showall'] = array(
+      'title'      => $title,
+      'href'       => drupal_get_path_alias('node/' . $node->nid),
+      'query'      => $query,
+      'attributes' => array(
+        'title' => $title,
+        'class' => $class,
+      ),
+    );
+  }
+
+}
+
+
+/**
+ * Implementation of template_preprocess_node().
+ *
+ */
+function pagination_preprocess_node(&$variables) {
+
+  if ($variables['view_mode'] != 'full') {
+    return;
+  }
+
+  $pg     = Pagination::instance();
+  $paging = $pg->getValue($variables['type']);
+
+  if ($paging) {
+    $headers = $pg->getHeaders($variables['node']->nid);
+    $page    = $pg->getPageVar();
+
+    if ($page == 0 || $page == 'show' || !isset($headers[$page]) ) {
+      $title = drupal_get_title();
+    }
+    else {
+      $title = $headers[$page];
+    }
+
+    $variables['pager']      = $pg->getPager();
+    $variables['pagination'] = (object) array(
+      'page_header' => $title,
+      'page_number' => $page,
+    );
+  }
+
+}
+
+
+/**
+ * Implementation of hook_form_alter()
+ *
+ */
+function pagination_form_alter(&$form, $form_state, $form_id) {
+
+  if (strpos($form_id, 'node_form') === FALSE) {
+    return;
+  }
+
+  $pg     = Pagination::instance();
+  $paging =  $pg->getValue($form['type']['#value']);
+  $style  =  $pg->getStyle($form['type']['#value']);
+  $help   =  '';
+
+  if ($paging)  {
+    $form['pagination'] = array(
+      '#type'         => 'fieldset',
+      '#collapsible'  => TRUE,
+      '#collapsed'    => TRUE,
+      '#title'        => t('Page headers'),
+      '#weight'       => -1,
+      '#attributes'   => array('class' => array('pagination-item-form') ),
+    );
+    if ($paging == PAGINATION_CUSTOM) {
+      // Add helper text for manual paging (custom headers)
+      $help .= '<p>' . t('If you would like your article to flow over more than one page, insert a page break within the body of your content at a convenient location:') . '</p>';
+      $help .= '<p>' . t('<em>ex. <strong>[ pagebreak ]</strong></em>') . '</p>';
+      if ($style > PAGINATION_DEFAULT)  {
+        $help .= '<p>' . t('In addition, you may set a title for the specific page by using this syntax instead:') . '</p>';
+        $help .= '<p>' . t('<em>ex. <strong>[ header = My Section Title ]</strong></em>') . '</p>';
+      }
+    }
+    elseif ($paging == PAGINATION_TAG)  {
+      $help .= '<p>' . t('Your article pages will break according to the presence of @tag tags. The contents of your @tag will be used as the page title.', array('@tag' => '<h3>') ) . '</p>';
+    }
+    elseif ($paging > PAGINATION_AUTO && $style > PAGINATION_DEFAULT) {
+      drupal_add_js(drupal_get_path('module', 'pagination') . '/js/pagination.js');
+      //  add helper text for default paging
+      $headers = isset($form['nid']['#value']) ? $pg->getHeaders($form['nid']['#value']) : array();
+      $form['pagination']['pagination_headers'] = array(
+        '#type'          => 'textarea',
+        '#title'         => t('Page headers'),
+        '#rows'          => 3,
+        '#description'   => t('You may declare page headers here. The first line represents the title of the 2nd page. Note: the page estimate may be underestimated by one page (or so) in certain circumstances.'),
+        '#default_value' => implode("\n", $headers),
+        '#suffix'        => '<div>' . t('Current page estimate: <span id="pagination-guess">1 page</span> (<span id="pagination-count">%words</span> words per page)', array('%words' => $paging) ) . '</div>',
+      );
+    }
+    else {
+      $help .= '<p>' . t('Your article will paginate based on an approximation of !number words per page.', array('!number' => $paging) ) . '</p>';
+    }
+    $form['pagination']['#description'] = $help;
+  }
+}
+
+
+/**
+ * Implements hook_field_extra_fields().
+ *
+ */
+function pagination_field_extra_fields() {
+  $extra = array();
+  $pg    = Pagination::instance();
+  foreach (node_type_get_types() as $type => $node) {
+    $paging = $pg->getValue($type);
+    $style  = $pg->getStyle($type);
+    if ($paging) {
+      if ($style < PAGINATION_TOC)  {
+        $extra['node'][$type]['display']['pagination_pager'] = array(
+          'label' => t('Pagination Pager'),
+          'description' => t('Rendered Pagination Pager.'),
+          'weight' => 10,
+        );
+      }
+      if ($style > PAGINATION_DEFAULT && $pg->getPageCount() > 1)  {
+        $extra['node'][$type]['display']['pagination_toc'] = array(
+          'label' => t('Pagination Table of Content'),
+          'description' => t('Rendered Pagination Table of Content.'),
+          'weight' => 10,
+        );
+      }
+    }
+  }
+  return $extra;
+}

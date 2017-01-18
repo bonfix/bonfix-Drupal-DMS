@@ -1,0 +1,56 @@
+/*
+ie8 fix
+*/
+.main-menu-trigger {
+  display: none;
+}
+.main-menu {
+  display: block !important;
+  position: absolute !important;
+  bottom: 6px !important;
+  right: 16px !important;
+  top: auto !important;
+  left: auto !important;
+}
+.main-menu a {
+  color: #fff !important;
+}
+.main-menu ul.menu {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+}
+.main-menu ul.menu li {
+  margin: 0.125em 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  white-space: nowrap !important;
+}
+.main-menu ul.level-0 > li {
+  position: relative !important;
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.main-menu ul.level-0 > li:hover > a {
+  border-bottom: 3px solid #fff;
+}
+.main-menu ul.level-0 > li.selected:hover > a,
+.main-menu ul.level-0 > li.selected > a {
+  background: #fff;
+  color: #313233;
+  border-radius: 2px 2px 0 0;
+}
+.main-menu ul.level-0 > li > a {
+  padding: 0.5em 1em;
+  transition: all 0.1s ease-in 0s;
+}
+.user-picture img {
+  max-width: 30px;
+}
+.page-user #main .user-picture img {
+  max-width: 80px;
+}
+#content .node-answers-answer .user-picture img {
+  max-width: 45px;
+}

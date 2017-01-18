@@ -1,0 +1,383 @@
+/*custom node templates*/
+
+.intro_tabs {
+  clear: both;
+  min-height: 200px;
+}
+.intro_tabs #tabs {
+  border-bottom: 3px solid #939598;
+  margin-bottom: 1px;
+  overflow: hidden;
+  padding: 0;
+}
+.intro_tabs #tabs li {
+  float: left;
+  list-style: none outside none;
+}
+.intro_tabs #tabs li a {
+  background-color: #939598;
+  border-bottom: 0 none;
+  border-right: 1px solid #ffffff;
+  color: #ffffff;
+  display: block;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 34px;
+  padding: 3px 30px 0 40px;
+  position: relative;
+}
+.intro_tabs #tabs li a.inactive {
+  background-color: #fafafa;
+  color: #939598;
+}
+.intro_tabs #tabs li a.inactive:hover {
+  background-color: #e9e9e9;
+  color: #939598;
+  cursor: pointer;
+}
+.intro_tabs #tabs li a:hover {
+  border-bottom: 0 none;
+  text-decoration: none;
+}
+.intro_tabs .title-team {
+  background-color: #ecf0f1;
+  border-bottom: 0 none;
+}
+.intro_tabs .title-team .num {
+  color: #848789;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 36px;
+  margin-left: 15px;
+}
+.intro_tabs .content {
+  margin-top: 10px;
+}
+
+.intro_tabs #tabs li a.team-icon:before,
+.intro_tabs #tabs li a.country-icon:before,
+.intro_tabs #tabs li a.info-icon:before,
+.intro_tabs #tabs li a.stats-icon:before,
+.intro_tabs #tabs li a.relateddocs-icon:before,
+.intro_tabs #tabs li a.faq-icon.inactive:before,
+.intro_tabs #tabs li a.faq-icon:before {
+  content: "";
+  width: 30px;
+  display: block;
+  height: 30px;
+  background-image: url("../images/icons/icon-sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
+  left: 7px;
+  top: 6px;
+}
+
+.intro_tabs #tabs li a.team-icon:before {
+  background-position: 0 -535px;
+}
+.intro_tabs #tabs li a.country-icon:before {
+  background-position: 0 -835px;
+}
+.intro_tabs #tabs li a.info-icon:before {
+  background-position: 0 -835px;
+}
+.intro_tabs #tabs li a.stats-icon:before {
+  background-position: -50px -533px;
+}
+.intro_tabs #tabs li a.relateddocs-icon:before {
+  background-position: 0 -685px;
+}
+.intro_tabs #tabs li a.faq-icon:before {
+  background-position: -50px -685px;
+}
+
+.intro_tabs #tabs li a.team-icon.inactive:before {
+  background-position: 0 -465px;
+}
+.intro_tabs #tabs li a.country-icon.inactive:before {
+  background-position: 0 -765px;
+}
+.intro_tabs #tabs li a.info-icon.inactive:before {
+  background-position: 0 -765px;
+}
+.intro_tabs #tabs li a.stats-icon.inactive:before {
+  background-position: -50px -463px;
+}
+.intro_tabs #tabs li a.relateddocs-icon.inactive:before {
+  background-position: 0 -615px;
+}
+.intro_tabs #tabs li a.faq-icon.inactive:before {
+  background-position: -50px -615px;
+}
+
+.intro_tabs .content .title {
+  font-size: 18px;
+  line-height: 25px;
+  text-align: left;
+}
+
+#stats {
+  margin-top: 20px;
+  overflow: hidden;
+  padding: 0;
+}
+#stats .tot {
+  background: url("../images/icons/icon-sprite.png") no-repeat scroll 0 -360px transparent;
+  color: #7a7d7f;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 42px;
+  padding-left: 55px;
+}
+.country-office-title-link {
+  border: none;
+  color: #939598;
+  font-style: italic;
+}
+.country-office-title {
+  font-size: 0.75em;
+}
+.field-name-title {
+  display: inline-block;
+  vertical-align: middle;
+}
+.field-name-field-logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.flag-outer.flag-outer-node-flag,
+.flag-outer.flag-outer-subscribe-wfp-it-node,
+.flag-outer.flag-outer-subscribe-wfp-it-user {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.tab-content {
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.intro_tabs .field-label {
+  font-weight: bold;
+}
+
+/* questions answers */
+.answer-widgets {
+  display: block;
+}
+.answer-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.view-question-answers .title-container {
+  display: none;
+}
+.answer-wrapper .meta.submitted {
+  float: left;
+  margin: 10px 0;
+}
+.answer-wrapper .author {
+  float: left;
+  margin-left: 5px;
+  margin-top: 12px;
+}
+.answer-wrapper .username {
+  font-weight: 600;
+}
+.answer-body .link-wrapper {
+  float: right;
+}
+.answer-body .link-wrapper li {
+  display: inline;
+  margin: 0 5px;
+}
+#main .comment-wrapper {
+  background-color: #ffffff;
+  clear: both;
+  float: left;
+  margin-top: 20px;
+  opacity: 1;
+  padding: 0;
+  width: 100%;
+}
+#main .comment-wrapper .comment {
+  border-bottom: 1px dashed #dddddd;
+  padding: 10px 0;
+}
+#main .comment-wrapper .comment:last-of-type {
+  border: 0;
+}
+#main .comment-wrapper .comment .links.inline {
+  float: right;
+  margin: 0;
+}
+#main .comment-wrapper .cke_contents {
+  height: 200px !important;
+}
+.answers-comments-form-title {
+  color: #7a7d7f;
+  float: right;
+}
+.answers-comments-form-title:hover {
+  background-color: transparent;
+}
+.node-answers-wrapper .answers-list .view,
+.node-answers-wrapper .new-answer-form form {
+  border-top: 1px solid #dddddd;
+  clear: both;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.node-answers_answer-form {
+  width: 100%;
+}
+.node-answers-wrapper .view-question-answers .view-header,
+.new-answer-form-title,
+.node-answers-wrapper .answers-comments-title {
+  font-weight: 600;
+  font-size: 1.3em;
+  padding: 0;
+}
+.node-answers-wrapper .view .views-row {
+  border-bottom: 1px dashed #dddddd;
+  padding: 0;
+}
+.node-answers-wrapper .view .views-row.views-row-last {
+  border-bottom: 0;
+}
+.new-answer-form .form-type-textarea label {
+  display: none;
+}
+#main .cke_chrome {
+  border: 1px solid #ccc;
+  box-shadow: none;
+  margin-bottom: 10px;
+}
+
+.answer-body {
+  display: block;
+  clear: both;
+}
+
+/* comments */
+#comments {
+  border-top: 1px solid #dddddd;
+  clear: both;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+#comments .title.comment-form {
+  font-weight: 600;
+  font-size: 1.3em;
+  padding: 0;
+}
+
+/* editor */
+#main .cke_top {
+  background: #ecf0f1;
+}
+
+/* Link toggle */
+#toggle-link {
+  margin-top: 2em;
+}
+
+/* Voting / Rate Widget */
+.rate-widget {
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+.rate-widget a:hover {
+  text-decoration: none;
+}
+
+.rate-widget .rate-info {
+  display: inline;
+  padding-left: 5px;
+}
+
+.rate-widget .rate-button {
+  border: 0;
+}
+
+/**
+ * CSS for Posts, Answers and Updates (News) content types.
+ */
+.node-shared-post,
+.node-faq,
+.node-update,
+.node-answers-question,
+.node-answers-wrapper,
+.answers-list,
+.new-answer-form {
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+
+.node-shared-post .content {
+  width: 100%;
+}
+
+.node-shared-post .content,
+.node-faq .content,
+.node-update .content,
+.node-answers-wrapper .answer-body {
+  font-size: 1.2em;
+}
+
+.node-shared-post .content img,
+.node-faq .content img,
+.node-update .content img,
+.node-answers-question .content img,
+.node-answers-wrapper .content img {
+  margin: 1em auto;
+  display: block;
+}
+.node-faq .submitted img {
+  margin: 0;
+}
+
+.field-name-og-group-ref .field-item,
+.field-name-field-tags .field-item {
+  display: inline;
+  margin-right: 0.8em;
+}
+.view-id-question_answers {
+  width: 100%;
+}
+
+/* Oembed */
+.oembed-default-embed {
+  display: table;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  padding-left: 1em;
+}
+
+.oembed-default-embed h3 {
+  margin: 0.5em 0;
+}
+
+.oembed-default-embed img {
+  margin: initial !important;
+  max-width: 680px;
+  height: auto;
+}
+
+.oembed-default-embed p {
+  float: left;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-right: 1em;
+}
+
+.oembed-default-embed .oembed-description {
+  font-size: 0.9em;
+  color: rgb(126, 126, 126);
+  clear: both;
+}

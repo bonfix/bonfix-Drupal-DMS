@@ -1,0 +1,191 @@
+/* Custom CSS for blocks */
+
+/* Blocks */
+.block-views {
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.sidebar .block h2,
+.block-views h2,
+.node-type-learning-path h2 {
+  border-bottom: 3px solid #939598;
+  color: #939598;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin-bottom: 1px;
+  margin-top: 10px;
+}
+
+.node-type-learning-path h2.field-label {
+  font-weight: 400;
+}
+
+.block-views .views-row,
+.block .row {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 1px;
+  padding: 7px 10px;
+}
+
+.block-views .page-view .views-row {
+  background-color: transparent;
+}
+.region-sidebar-second .block-views .views-row,
+.region-sidebar-first .block-views .views-row,
+.block. row {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+.block-views .views-row p {
+  margin: 0;
+}
+.block-views .views-row h3 {
+  margin: 0px;
+}
+
+.block-views .views-row .views-field-title a,
+.block .row a {
+  font-weight: 600;
+}
+
+.block-views .views-row .views-field-created {
+  color: #939598;
+  font-size: 0.938em;
+  font-style: italic;
+  font-weight: normal;
+}
+#sidebar-first .block-views h2 {
+  font-size: 1.125em;
+}
+
+/* questions block */
+.block-views .block-questions,
+.block-views .block-shared-posts {
+  color: #7a7d7f;
+}
+.block-views .block-questions .views-field-title,
+.block-views .block-shared-posts .views-field-title {
+  font-size: 17px;
+}
+
+/* it news */
+#block-views-this-is-it-it-news-block h2 {
+  background-color: #fda515;
+  border-bottom: 3px solid #ffba3a;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 34px;
+  margin-bottom: 0;
+  padding: 2px 10px 0;
+  text-transform: none;
+}
+#block-views-this-is-it-it-news-block .views-row .views-field-created {
+  color: #fda515;
+}
+
+/*blocks in node-type-regional-bureau*/
+.block_view_country_offices_x_region,
+.block_view_services_x_local_office,
+.block_view_country_services_x_area,
+.block_view_solutions_x_local_office,
+.block_view_country_solutions_x_area {
+  width: 48%;
+  float: left;
+  margin: 0 1%;
+}
+/**/
+
+/*blocks in node-type-country-office*/
+.block_view_services_x_local_office {
+  width: 48%;
+  float: left;
+  margin: 0 1%;
+}
+
+.block_view_solutions_x_local_office {
+  width: 48%;
+  float: left;
+  margin: 0 1%;
+}
+/**/
+
+#block-wfp-it-functions-wfp-add-question a#btn-ask,
+#block-wfp-it-functions-wfp-add-post a#btn-post {
+  background-color: #7ec1ff;
+  color: #fff;
+  -webkit-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: all 0.1s ease-in 0s;
+  -moz-transition: all 0.1s ease-in 0s;
+  -o-transition: all 0.1s ease-in 0s;
+  transition: all 0.1s ease-in 0s;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  font-style: normal;
+  padding: 0.3em 1em 0.1em 40px;
+}
+
+#block-wfp-it-functions-wfp-add-question a#btn-ask:before,
+#block-wfp-it-functions-wfp-add-post a#btn-post:before {
+  top: auto;
+  bottom: auto;
+}
+#content a#btn-ask:before {
+  background-position: 0 -100px;
+}
+#content a#btn-ask,
+#content a#btn-post {
+  background-color: #7ec1ff;
+  color: white;
+}
+#content a#btn-post:before {
+  background-position: 0 -150px;
+}
+
+#block-wfp-it-functions-wfp-add-post a#btn-post:before {
+  background-position: 0 -150px;
+}
+
+#block-wfp-it-functions-wfp-add-question a#btn-ask:hover,
+#block-wfp-it-functions-wfp-add-post a#btn-post:hover {
+  background-color: #3b86ca;
+  color: white;
+}
+
+#block-wfp-it-functions-wfp-add-post:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.search-bar {
+  margin: 5px 0 5px 0px;
+  padding: 0px 0 0px 20px;
+  border-left: 1px dashed #c9c9c9;
+}
+
+.block_questions_answers .title-container {
+  border-bottom: 3px solid #939598;
+  padding-bottom: 0px;
+}
+.block_questions_answers .title-container .add-group-content {
+  float: right;
+}
+.block_questions_answers h2 {
+  border-bottom: 0px;
+  float: left;
+  display: inline-block;
+}
+
+/*facetapi*/
+.block-facetapi h2 {
+  font-size: 0.9em;
+  margin-bottom: 0.6em;
+  font-weight: 600;
+}

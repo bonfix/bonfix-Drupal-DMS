@@ -1,0 +1,128 @@
+<?php
+
+require_once('utils.php');
+
+/**
+* Display help and module information.
+* @param path
+*   Which path of the site we're displaying help.
+* @param arg
+*   Array that holds the current path as would be returned from arg() function.
+* @return
+*   help text for the path.
+*/
+function fix_help($path, $arg) {
+  $output = '';
+  switch ($path) {
+    case "admin/help#fix":
+      $output = '';
+      $output .= '' . t('About') . '';
+      $output .= '' . t(' - Help here') . '.';
+      $output .= '' . t('The steps to use this module: (coming soon...)'). '';
+	  $output .= '';
+      break;
+  }
+  return $output;
+}
+
+function fix_init(){
+ drupal_add_css('sites/all/modules/datatables/dataTables/media/css/jquery.dataTables.css');
+ drupal_add_css("sites/all/modules/fix/fix.css");
+  //drupal_add_css("sites/all/modules/fix/wfpui.min.css");
+ drupal_add_js('sites/all/modules/datatables/dataTables/media/js/jquery.dataTables.js');
+ drupal_add_js('sites/all/modules/fix/init_datatables.js');
+}
+
+function fix_filebrowser_view($node, $view_mode) {
+ // d("Test - view", true);
+if ($node->folder_uploads->enabled && user_access(FILEBROWSER_UPLOAD)) {
+        $form = drupal_get_form('filebrowser_form_upload', $node);
+        $node->content['filebrowser_form_upload'] = array(
+            '#markup' => drupal_render($form),
+            '#weight' => 5
+        );
+      }
+}
+
+//#filebrowser-form-upload
+function fix_form_filebrowser_form_upload_alter(&$form, &$form_state, $form_id) 
+{
+ //d($form['filebrowser_uploads'] , true);
+  //choose only add
+  {
+    //global $user;
+    $form['filebrowser_uploads']['description_1']['#title'] = "Description (optional)";
+    $form['filebrowser_uploads']['file_name_1']['#title'] = "New name (optional)";
+    $form['filebrowser_uploads']['file_name_1']['#description'] = "";
+   // d($form['#action']);
+    
+   // d($form['submitted'], true);
+
+    /*
+
+    $form['#attached']['js'] = array(
+      drupal_get_path('module', 'hrsfix') . '/js/jquery-3.1.1.js',
+      drupal_get_path('module', 'hrsfix') . '/js/hrsfix.js',
+      );
+
+      */
+
+    
+    // $form['user_token']= array(
+    //   '#type'  => 'hidden',
+    //   '#value' => drupal_get_token($user->uid),
+    //   );
+   }//end of add
+
+}
+
+/**
+* Implements hook_menu().
+*/
+function fix_menu() {
+  // $items['api/basic-details/%'] = array(
+  $items['help'] = array(
+    'page callback' => 'help', // Render HTML.
+    // 'page arguments' => array(2),
+    'type' => MENU_CALLBACK,
+    // 'access arguments' => array(2, 3),
+    'access arguments' => array('access content'),
+    //'delivery callback' => 'hrsfix_ajax_callback',  // Magic goes here.
+    );
+
+  return $items;
+}
+
+function help()
+{
+   $output = '';
+    $output .= '<h2>' . t('How to upload files') . '</h2>';
+    $output .= '<ul>';
+    $output .= '<li>' . t(' Got to Top Level Folder -> WFP Kenya -> then your desired folder (or department) OR sub folder') . '.</li>';
+    $output .= '<li>' . t(' Click on new file, and a dialog will appear asking you to select the file, enter the display name and a description of the file') . '.</li>';
+    $output .= '<li>' . t(' Click upload') . '.</li>';
+    $output .= '<li>' . t(' Your file will appear on the chosen folder after upload!') . '</li>';
+
+    $output .= '</ul>';
+
+    $output .= '<h2>' . t('How to download files') . '</h2>';
+    $output .= '<ul>';
+    $output .= '<li>' . t(' Got to the folder containing the file') . '.</li>';
+    $output .= '<li>' . t(' On the file list, the right-most column contains a download button, click on the button(green arrow that points down), and the file will start downloading') . '.</li>';
+
+    $output .= '</ul>';
+
+    $output .= '<h2>' . t('How to replace a file with newer version of that same file'). '</h2>';
+    $output .= '<ul>';
+    $output .= '<li>' . t(' Navigate to the folder containing the file to replace') . '.</li>';
+    $output .= '<li>' . t(' Click on the file') . '.</li>';
+    $output .= '<li>' . t(' A dialog will appear') . '</li>';
+    $output .= '<li>' . t(' Click on Edit New version') . '</li>';
+    $output .= '<li>' . t(' Choose the file to upload') . '</li>';
+    $output .= '<li>' . t(' Enter the details about the changes made to the file in the Version Notes field') . '</li>';
+
+    $output .= '</ul>';
+
+    
+    return $output;
+}

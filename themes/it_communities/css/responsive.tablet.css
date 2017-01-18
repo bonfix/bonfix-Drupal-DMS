@@ -1,0 +1,25 @@
+/* Layout for tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #content {
+    width: 100%;
+  }
+  header.masthead {
+    height: 120px !important;
+    max-height: none;
+  }
+  .masthead .wrapper {
+    height: 100%;
+  }
+  .main-menu {
+    bottom: -11px;
+  }
+  .band {
+    padding-top: 121px;
+  }
+  h1#page-title,
+  #sidebar-first,
+  #sidebar-second {
+    width: 100%;
+  }
+}

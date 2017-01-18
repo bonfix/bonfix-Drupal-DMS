@@ -1,0 +1,1632 @@
+
+div.DTTT_container {
+ float: none !important;
+ font-family: "myriad-pro", sans-serif;
+ font-size: 14px !important;
+ float:right !important;
+ color: #313233 !important;
+ min-width:58% !important;
+ margin-top:-45px !important;
+ margin-left:-20px !important;
+ background:white !important;
+
+}
+
+
+body.page-re.page-re-se div.DTTT_container,
+body.page-re.page-re-co div.DTTT_container{
+ margin-top:10px !important	
+}
+
+button.DTTT_button {
+ float: none !important;
+ border: none !important;
+ font-weight:bolder !important;
+ color:lightgray !important	
+}
+.webform-client-form .webform-layout-box *,
+.webform-client-form .webform-layout-box * *,
+.webform-client-form .webform-layout-box * * *,
+.webform-client-form .webform-layout-box * * * *,
+.webform-client-form .webform-layout-box * * * * *,
+.webform-client-form .webform-layout-box * * * * * *{
+ padding-top:0px !important;
+ padding-bottom:0px !important;
+ margin-top:-2px !important;
+ margin-bottom:-2px !important;
+ font-size:14px !important
+}
+#main-wrapper span.form-required{
+ color:#4295E0 !important;
+ font-weight:bolder !important
+}
+#main-wrapper div.home-main-form-links *,h2,h1,table,table *,td,tr,tbody,thead,th{
+ font-family:"Myriad Pro", sans-serif; 
+ text-shadow:none !important;
+ letter-spacing: normal !important;
+ line-height: 1.562em !important;
+ -webkit-font-smoothing:none !important;	
+ text-rendering:none !important;
+}
+#main-wrapper div.home-main-form-links{
+ max-width:35% !important; 
+ padding:0px !important; 
+ margin:0px !important
+}
+#main-wrapper div.home-main-table{
+ padding-top:3px !important; 
+ width:auto !important; 
+ max-width:none !important ;
+}
+
+#main-wrapper h2,
+#main-wrapper h1{
+ line-height: 1.562em !important;
+ border-bottom:5px solid #FCFCFC !important;
+ color: #2c3e50 !important;
+ font-weight:500 !important;
+ text-shadow:none !important;
+ margin-bottom:20px !important;
+ padding-bottom:5px !important;
+ margin-top:10px !important
+}
+#main-wrapper h2.space-up{	
+ margin-top:20px !important
+	
+}
+#main-wrapper .content{
+ padding-top:0px !important;
+ padding-bottom:0px !important;
+ margin-top:-2px !important;
+ margin-bottom:-2px inherit !important
+}
+#footer{
+ padding:10px !important;
+ font-size:80% !important
+}
+
+body #main-wrapper table{
+ text-align:left !important;
+ align-content: flex-start !important;	
+ font-weight:500 !important;
+ width:auto !important;
+ min-width:70% !important
+}
+body #main-wrapper table th,
+body #main-wrapper table td{
+ font-size:inherit !important;
+ padding-left:20px !important;	
+ font-weight:500 !important;
+ padding-top:5px !important;
+ padding-bottom:5px !important;
+ min-width:60px !important
+}
+body.page-re #main-wrapper table th,
+body.page-re #main-wrapper table td{
+ padding-left:10px !important;
+}
+#main-wrapper table tbody tr td{
+ border:1px solid lightgray !important; 
+}
+#main-wrapper table thead tr th{
+ background-color:#4AA8FD !important; 
+ color:white !important;
+ border:2px solid #4295E0 !important;
+ padding-left:20px !important;
+ padding-right:20px !important;
+
+}
+body.page-re #main-wrapper table thead tr th{
+  padding-left:2px !important;
+  padding-right:2px !important;	
+}
+#main-wrapper table tbody tr.even,
+#main-wrapper table tbody tr:hover{
+ background-color:#DEEAF6 !important;
+ cursor:pointer !important
+}
+#main-wrapper ul.links.inline{
+ float:left !important
+}
+#main-wrapper ul.links.inline li,
+#main-wrapper ul.links.inline li a{
+ display:inline-block !important;
+ margin-right:5px !important
+	
+}
+body.page-node.page-node-comment form.webform-client-form,
+body.page-node.page-node-comment ul.links,
+body.page-node.page-node-comment .field.field-name-field-form-type,
+body.page-node.page-node-comment .field.field-name-field-report-columns,
+body.page-node.page-node-comment .field.field-name-field-activated,
+body.page-node.page-node-comment .field.field-name-field-factor,
+body.page-node.page-node-comment .field.field-name-field-deadline,
+body #main-wrapper .filter-wrapper.form-wrapper,
+body #main-wrapper .filter-wrapper.form-wrapper,
+body #main-wrapper .field-type-image.field-name-field-image.field-widget-image-image.form-wrapper,
+body.page-re #main-wrapper .form-item.webform-component.webform-component--info--submitter,
+body.page-re #main-wrapper #edit-submitted-info-submitter
+html#co-it-home #comments,
+html#re div.messages.status,
+#main-wrapper tr#raw_with_rito_risk_gold td span,
+#main-wrapper tr#raw_with_rito_risk_green td span,
+#main-wrapper tr#raw_with_rito_risk_red td span td span,
+#main-wrapper tr#raw_with_co_it_head_risk_gold td span,
+#main-wrapper tr#raw_with_co_it_head_risk_green td span,
+#main-wrapper tr#raw_with_co_it_head_risk_red td span,
+#main-wrapper tr#raw_with_rito_compliance_gold td span,
+#main-wrapper tr#raw_with_rito_compliance_green td span,
+#main-wrapper tr#raw_with_rito_compliance_red td span,
+#main-wrapper tr#raw_with_co_it_head_compliance_gold td span,
+#main-wrapper tr#raw_with_co_it_head_compliance_green td span,
+#main-wrapper tr#raw_with_co_it_head_compliance_red td span,
+#main-wrapper span#rito_risk_gold,
+#main-wrapper span#rito_risk_green,
+#main-wrapper span#rito_risk_red,
+#main-wrapper span#co_it_head_risk_gold,
+#main-wrapper span#co_it_head_risk_green,
+#main-wrapper span#co_it_head_risk_red,
+#main-wrapper span#rito_compliance_gold,
+#main-wrapper span#rito_compliance_green,
+#main-wrapper span#rito_compliance_red,
+#main-wrapper span#co_it_head_compliance_gold,
+#main-wrapper span#co_it_head_compliance_green,
+#main-wrapper span#co_it_head_compliance_red,
+body.page-node.page-node-submission.page-node-submission-edit input.webform-next.button-primary.form-submit,
+body.page-re-st div.messages.status,
+body.page-re-co div.messages.status,
+body.page-re-se div.messages.status,
+body:not(.not-logged-in) #main-wrapper .messages.error,
+#main-wrapper div.webform-submission-info-text div:nth-child(4),
+#main-wrapper div.webform-submission-info-text div:nth-child(2),
+#main-wrapper .webform-submission-actions,
+#main-wrapper .webform-submission-navigation,
+body.page-node-done #main-wrapper div.links,
+body.logged-in #main-wrapper ul.tabs,
+body.logged-in #content ul.tabs,
+body.logged-in #block-views-hidden-block,
+#main-wrapper .webform-progressbar,
+#main-wrapper .field-type-text-long.field-name-field-report-columns,
+#main-wrapper #edit-field-report-columns-und-0-value,
+html#it-risk #main-wrapper .field-name-field-form-type,
+html#it-risk #main-wrapper .field-name-field-activated,
+html#it-risk #main-wrapper .field-name-field-factor,
+html#it-risk #main-wrapper .field-name-field-deadline,
+html#it-risk #main-wrapper .field-name-field-report-columns,
+html#it-compliance #main-wrapper .field-name-field-form-type,
+html#it-compliance #main-wrapper .field-name-field-activated,
+html#it-compliance #main-wrapper .field-name-field-factor,
+html#it-compliance #main-wrapper .field-name-field-deadline,
+html#it-compliance #main-wrapper .field-name-field-report-columns,
+#main-wrapper ul.action-links,
+#main-wrapper #comments h2:first-child,
+#main-wrapper #comments h1:first-child,
+#main-wrapper #comments h2:nth-child(1),
+#main-wrapper #comments h1:nth-child(1),
+#main-wrapper #comments h2:first-of-type,
+#main-wrapper #comments h1:first-of-type,
+#main-wrapper div.ield-name-field-submission.field-widget-text-textfield,
+#main-wrapper .block.block-commentsblock h2:first-child,
+#main-wrapper .block.block-commentsblock h1:first-child,
+#main-wrapper .block.block-commentsblock h2:nth-child(1),
+#main-wrapper .block.block-commentsblock h1:nth-child(1),
+#main-wrapper .block.block-commentsblock h2:first-of-type,
+#main-wrapper .block.block-commentsblock h1:first-of-type,
+body.page-node-webform-components #main-wrapper .form-item.form-type-textfield.form-item-extra-wrapper-classes,
+body.page-node-webform-components #main-wrapper .form-item.form-type-textfield.form-item-extra-css-classes,
+#main-wrapper .block.block-commentsblock,
+html#it-compliance #main-wrapper #comments,
+body.page-node-submission.page-node-submission-edit #main-wrapper h1.title,
+body.page-node-submission #main-wrapper #page-title,
+html#it-risk #main-wrapper #comments,
+html#co-it-home form.comment-form pure-form,
+html#co-it-home #main-wrapper #comments,
+html[id=co-it-home] #main-wrapper #comments,
+html#co-it-home #main-wrapper .comment-wrapper,
+#main-wrapper ul.links.inline li a.active,
+#main-wrapper #webform-components-form .checkbox.form-checkbox,
+#main-wrapper #webform-components td.webform-component-required.checkbox,
+#main-wrapper .tabledrag-toggle-weight-wrapper,
+#main-wrapper .tabledrag-toggle-weight,
+#main-wrapper .vertical-tabs-panes,
+#main-wrapper .vertical-tabs-panes fieldset,
+#main-wrapper .vertical-tabs-panes div,
+#main-wrapper .vertical-tabs-panes *,
+#main-wrapper .webform-client-form .messages.warning,
+body.page-re-st #block-views-submit-comments-block,
+body.page-re-st #comments,
+body.page-re-se #block-views-submit-comments-block,
+body.page-re-se #comments,
+body #main-wrapper ul.tabs li:first-child,
+body #main-wrapper ul.tabs li:nth-child(1),
+body.html.page-re.page-re-st div.home-main-form-links-small.right a,
+body.html.page-re.page-re-st div.home-main-form-links-small.right *,
+body.html.page-re.page-re-st div.home-main-form-links-small.right,
+body.html.page-re.page-re-co div.home-main-form-links-small.right a,
+body.html.page-re.page-re-co div.home-main-form-links-small.right *,
+body.html.page-re.page-re-co div.home-main-form-links-small.right,
+body.html.page-re.page-re-se div.home-main-form-links-small.right a,
+body.html.page-re.page-re-se div.home-main-form-links-small.right *,
+body.html.page-re.page-re-se div.home-main-form-links-small.right,
+#main-wrapper .form-item.webform-component.webform-component--info--submitter,
+#main-wrapper .form-item.webform-component--info--submitter,
+#main-wrapper form.webform-client-form.preview .child-width-7 .form-item label,
+#main-wrapper form.webform-client-form.preview .child-width-5 .form-item label,
+body.page-node-comment.node-type-webform #comments #edit-preview,
+#main-wrapper table .DataTables_sort_wrapper .DataTables_sort_icon.ui-icon,
+html#it-compliance #main-wrapper .webform-client-form.preview .form-item.webform-component label,
+body #main-wrapper div.inmplayer-general div.inmplayer-panel-footer a.inmplayer-panel-footer-branding,
+body div.inmplayer-general div.inmplayer-panel-footer a.inmplayer-panel-footer-branding,
+body div.inmplayer-panel-footer a.inmplayer-panel-footer-branding,
+html body div#printElement,
+div.inmplayer-panel-footer a:first-child,
+html#it-compliance #main-wrapper form div.form-item.webform-component.webform-component-textarea label,
+#main-wrapper form.webform-client-form .form-item.webform-component.webform-component-radios label:first-child,
+body.page-node.node-type-webform #page-wrapper #main-wrapper #block-system-main div.field.field-name-field-form-type,
+body.page-node.node-type-webform #page-wrapper #main-wrapper #block-system-main div.field.field-name-field-deadline,
+body.page-node.node-type-webform #page-wrapper #main-wrapper #block-system-main div.field.field-name-field-activated,
+body.page-node.node-type-webform #page-wrapper #main-wrapper #block-system-main div.field.field-name-field-factor,
+body #main-wrapper .form-item.webform-component.webform-component-display.webform-component--email,
+body #main-wrapper .form-item.webform-component.webform-component-display.webform-component--email *{
+ display:none !important
+}
+#main-wrapper form div.form-item.webform-component.webform-component-textarea{
+ padding:0px !important	;
+ margin:0px !important
+}
+#main-wrapper form div.form-item.webform-component.webform-component-textarea textarea{
+	 display: table-row !important;
+}
+main-wrapper .webform-client-form{
+ display:table !important
+}
+#main-wrapper .webform-client-form .form-item select,
+#main-wrapper #edit-submitted-info-region, 
+#main-wrapper #edit-submitted-info-country,
+#main-wrapper .webform-client-form .form-item input[type=text],
+#main-wrapper .webform-client-form .form-item textearea,
+#main-wrapper .form-item.webform-component-select select,
+#main-wrapper .form-item.form-type-select select{
+ padding-bottom:5px !important;
+ padding-top:5px !important;
+ min-width:150px !important;
+ min-width:70% !important;
+ cursor:pointer !important
+	
+}
+body.page-re-st #main-wrapper .form-item select,
+body.page-re-co #main-wrapper .form-item select,
+body.page-re-se #main-wrapper .form-item select{
+ background-color:#FCFCFC !important;
+ border-color:#EFEFEF !important;
+ cursor:pointer !important;
+ font-size:90% !important;
+ padding-left:10px !important
+}
+#main-wrapper .webform-client-form .form-item label{
+ padding-bottom:5px !important
+	
+}
+#main-wrapper .webform-client-form{
+	
+}
+#main-wrapper .webform-client-form .webform-layout-box{
+ border:0px solid #EFEFEF !important;
+ overflow:hidden !important;
+}
+#main-wrapper .webform-client-form .form-item.webform-component{
+ padding:15px !important;
+}
+#main-wrapper .webform-client-form.preview label,
+#main-wrapper fieldset.webform-submission-info legend,
+body.page-re-st #main-wrapper .form-item.webform-component-select label,
+body.page-re-st #main-wrapper .form-item.form-type-select label,
+body.page-re-co #main-wrapper .form-item.webform-component-select label,
+body.page-re-co #main-wrapper .form-item.form-type-select label,
+body.page-re-se #main-wrapper .form-item.webform-component-select label,
+body.page-re-se #main-wrapper .form-item.form-type-select label{
+  border-bottom:3px solid #F5F5F5 !important;
+  padding-bottom:3px !important;
+  max-width:70% !important;
+  margin-bottom:8px !important
+	
+}
+#main-wrapper .webform-client-form div.webform-layout-box .form-item.webform-component,
+#main-wrapper .webform-client-form.preview div.webform-layout-box p{
+ background-color:white !important;
+ min-height:auto !important;
+ max-height:auto !important;
+ height:auto !important;
+ display:table-cell !important;
+ padding:10px !important;
+ vertical-align:text-top !important
+
+}
+#main-wrapper .webform-client-form div.webform-component--section-a,
+#main-wrapper .webform-client-form div.webform-component--section-b,
+#main-wrapper .webform-client-form div.webform-component--section-c,
+#main-wrapper .webform-client-form div.webform-component--section-d,
+#main-wrapper .webform-client-form div.webform-component--columns,
+#main-wrapper .webform-client-form div.webform-component--info{
+ display: -webkit-box !important;  
+ display: -moz-box !important;  
+ display: -ms-flexbox !important; 
+ display: -webkit-flex !important;   
+ display: flex !important;  
+}
+
+#main-wrapper .webform-client-form div.webform-component--columns .form-item.webform-component,
+#main-wrapper .webform-client-form div.webform-component--info .form-item.webform-component,
+#main-wrapper .webform-client-form.preview div.webform-component--columns p,
+#main-wrapper .webform-client-form.preview div.webform-component--section-a p,
+#main-wrapper .webform-client-form.preview div.webform-component--section-b p,
+#main-wrapper .webform-client-form.preview div.webform-component--section-c p,
+#main-wrapper .webform-client-form.preview div.webform-component--section-d p,
+#main-wrapper .webform-client-form.preview div.webform-component--info p{
+ flex:1 !important;
+ -webkit-box-flex:1 !important;   
+ -moz-box-flex:1 !important;                   
+ -webkit-flex:1 !important;          
+ -ms-flex:1 !important;            
+ flex:1 !important;             
+ margin:0px !important;
+ padding:10px !important;
+ overflow:hidden !important
+}
+#main-wrapper .webform-client-form div.webform-component--columns.child-width-7 div.form-item p,
+#main-wrapper .webform-client-form div.webform-component--columns.child-width-4 div.form-item p,
+#main-wrapper .webform-client-form div.webform-component--info div.form-item{
+ padding-right:15px !important;
+ padding-left:15px !important;
+ max-width:320px !important
+}
+#main-wrapper .webform-client-form div.webform-component--columns .form-item.webform-component,
+#main-wrapper .webform-client-form.preview div.webform-component--columns p,
+#main-wrapper .webform-client-form.preview div.webform-component--section-a p,
+#main-wrapper .webform-client-form.preview div.webform-component--section-b p,
+#main-wrapper .webform-client-form.preview div.webform-component--section-c p,
+#main-wrapper .webform-client-form.preview div.webform-component--section-d p,
+#main-wrapper .webform-client-form div.webform-component--columns .form-item.webform-component p,
+#main-wrapper .webform-client-form div.webform-component--section-a .form-item.webform-component p,
+#main-wrapper .webform-client-form div.webform-component--section-b .form-item.webform-component p,
+#main-wrapper .webform-client-form div.webform-component--section-c .form-item.webform-component p,
+#main-wrapper .webform-client-form div.webform-component--section-d .form-item.webform-component p{
+ padding:0px !important;
+ vertical-align:middle !important;
+}
+.is_color_determine_box{
+ text-align:center !important;
+ font-weight:bolder !important;
+ font-size:110% !important;
+ font-weight:bolder !important;
+ min-height:50px !important;
+ max-width:100% !important;
+ width:100% !important;
+ vertical-align:top !important;
+}
+#main-wrapper .home-main-form-links-small.right,
+#main-wrapper .home-main-form-links-small.left{
+ padding:20px !important;	
+}
+#main-wrapper .home-main-form-links-small.right a:not(:active),
+#main-wrapper .home-main-form-links-small.left a:not(:active){
+ color:lightgray !important	
+}
+#main-wrapper .home-main-form-links-small.right *,
+#main-wrapper .home-main-form-links-small.left *{
+	margin-right:5px !important;
+	margin-left:5px !important
+	
+}
+#main-wrapper .content.main-page-content{	
+ margin-top:5px !important;
+ margin-bottom:5px !important;
+ padding-top:-10px !important;
+ padding-bottom:-10px !important
+}
+#main-wrapper strong, #main-wrapper b{
+ text-shadow:none !important;
+ font-weight:bolder !important
+	
+}
+body.not-logged-in #main-wrapper h2,
+#block-views-all-reports-block-1 h2:first-child,
+#block-views-all-reports-block-1 h2:nth-child(1){
+ border:none !important;
+ font-weight:800 !important;
+ margin-bottom:10px !important;
+ padding-bottom:0px !important;
+ margin-top:20px !important
+}
+body.logged-in .user-picture,
+#main-wrapper fieldset.webform-submission-info.clearfix img{
+ border:3px solid #F3F3F3 !important
+}
+#main-wrapper .pagination-links{
+ font-size:80%  !important;
+ color:lightgray !important;
+ border-bottom:5px solid #FCFCFC !important;
+ margin-left:20px !important;
+ margin-right:20px !important
+}
+
+body.page-node.page-node-comment #comments,
+body.page-node.page-comment.page-comment-reply #comments,
+#main-wrapper #block-views-submit-comments-block{
+ max-width:70% !important;
+}
+#main-wrapper #block-views-submit-comments-block *,
+#main-wrapper #block-views-submit-comments-block * *,
+#main-wrapper #block-views-submit-comments-block * * *{
+ font-style:normal !important;
+ text-shadow:none !important;
+ font-weight: 500 !important;
+ font-family: "Myriad Pro", sans-serif;
+ text-shadow: none !important;
+ letter-spacing: normal !important;
+ line-height: 1.562em !important;
+
+}
+#main-wrapper #block-views-submit-comments-block div.content *{
+ font-size:15px !important	
+}
+#main-wrapper #block-views-submit-comments-block div.field-content p,
+#main-wrapper #block-views-submit-comments-block span.views-field-name,
+#main-wrapper #block-views-submit-comments-block span.views-field-created{
+ color:#000 !important;
+}
+#main-wrapper #block-views-submit-comments-block span.views-field-name,
+#main-wrapper #block-views-submit-comments-block span.views-field-created,
+#main-wrapper #comments span.commenter-name,
+#main-wrapper #comments span.comment-time{
+ text-transform:lowercase !important;
+ margin-bottom:10px !important;
+ margin-top:10px !important;
+ border-bottom:2px solid #FCFCFC !important
+	
+}
+div.comment-text h3 *,
+div.comment-text h3{
+ margin-top:0px !important;
+ margin-bottom:10px !important;
+ font-weight:500 !important
+ 
+	
+}
+.views-row.views-row-odd,
+.views-row.views-row-even,
+tr.views-row:nth-child(odd),
+tr.views-row:nth-child(even),
+tr:nth-child(odd),
+tr:nth-child(even),
+body.page-node.page-node-comment #comments .comment.comment-by-node-author{
+  border:none !important;
+  padding:10px !important;
+  
+}
+.views-row.views-row-odd,
+.field-item.odd,
+body.page-node.page-node-comment #comments .comment.comment-by-node-author{
+ border-bottom:5px solid #FCFCFC !important;	
+ border-top:none !important
+}
+html[id=re/co] #main-wrapper .field-item.even,
+html[id=re/co] #main-wrapper .views-row.views-row-even{
+ background-color:#FFFFFF !important;
+
+}
+body header.masthead {
+ position: fixed !important;
+ z-index:9 !important;
+}
+#main-wrapper .content.demand{
+ padding:20px !important;
+ background-color:#FCFCFC !important;
+ font-size:16px !important;
+ max-width:70% !important;
+ border-bottom:10px solid white !important	
+}
+#main-wrapper .views-field.views-field-subject a{
+
+}
+#main-wrapper td#raw_with_rito_risk_gold,
+#main-wrapper td#raw_with_rito_risk_green,
+#main-wrapper td#raw_with_rito_risk_red,
+#main-wrapper td#raw_with_co_it_head_risk_gold,
+#main-wrapper td#raw_with_co_it_head_risk_green,
+#main-wrapper td#raw_with_co_it_head_risk_red,
+#main-wrapper td#raw_with_rito_compliance_gold,
+#main-wrapper td#raw_with_rito_compliance_green,
+#main-wrapper td#raw_with_rito_compliance_red,
+#main-wrapper td#raw_with_co_it_head_compliance_gold,
+#main-wrapper td#raw_with_co_it_head_compliance_green,
+#main-wrapper td#raw_with_co_it_head_compliance_red{
+ font-weight:bolder !important;
+ font-size:110% !important;
+ vertical-align:central !important;
+}
+#main-wrapper tr#raw_with_rito_risk_gold,
+#main-wrapper tr#raw_with_rito_risk_green,
+#main-wrapper tr#raw_with_rito_risk_red,
+#main-wrapper tr#raw_with_co_it_head_risk_gold,
+#main-wrapper tr#raw_with_co_it_head_risk_green,
+#main-wrapper tr#raw_with_co_it_head_risk_red,
+#main-wrapper tr#raw_with_rito_compliance_gold,
+#main-wrapper tr#raw_with_rito_compliance_green,
+#main-wrapper tr#raw_with_rito_compliance_red,
+#main-wrapper tr#raw_with_co_it_head_compliance_gold,
+#main-wrapper tr#raw_with_co_it_head_compliance_green,
+#main-wrapper tr#raw_with_co_it_head_compliance_red{
+ border-right:5px solid #FFE6E6 !important; 
+ cursor:pointer !important; 
+ padding-right:0px !important;
+
+}
+
+#main-wrapper tr#raw_with_rito_risk_gold:hover,
+#main-wrapper tr#raw_with_rito_risk_green:hover,
+#main-wrapper tr#raw_with_rito_risk_red:hover,
+#main-wrapper tr#raw_with_rito_risk_gold:focus,
+#main-wrapper tr#raw_with_rito_risk_green:focus,
+#main-wrapper tr#raw_with_rito_risk_red:focus,
+#main-wrapper tr#raw_with_rito_risk_gold:active,
+#main-wrapper tr#raw_with_rito_risk_green:active,
+#main-wrapper tr#raw_with_rito_risk_red:active,
+#main-wrapper tr#raw_with_co_it_head_risk_gold:hover,
+#main-wrapper tr#raw_with_co_it_head_risk_green:hover,
+#main-wrapper tr#raw_with_co_it_head_risk_red:hover,
+#main-wrapper tr#raw_with_co_it_head_risk_gold:focus,
+#main-wrapper tr#raw_with_co_it_head_risk_green:focus,
+#main-wrapper tr#raw_with_co_it_head_risk_red:focus,
+#main-wrapper tr#raw_with_co_it_head_risk_gold:active,
+#main-wrapper tr#raw_with_co_it_head_risk_green:active,
+#main-wrapper tr#raw_with_co_it_head_risk_red:active,
+#main-wrapper tr#raw_with_rito_compliance_gold:hover,
+#main-wrapper tr#raw_with_rito_compliance_green:hover,
+#main-wrapper tr#raw_with_rito_compliance_red:hover,
+#main-wrapper tr#raw_with_rito_compliance_gold:focus,
+#main-wrapper tr#raw_with_rito_compliance_green:focus,
+#main-wrapper tr#raw_with_rito_compliance_red:focus,
+#main-wrapper tr#raw_with_rito_compliance_gold:active,
+#main-wrapper tr#raw_with_rito_compliance_green:active,
+#main-wrapper tr#raw_with_rito_compliance_red:active,
+#main-wrapper tr#raw_with_co_it_head_compliance_gold:hover,
+#main-wrapper tr#raw_with_co_it_head_compliance_green:hover,
+#main-wrapper tr#raw_with_co_it_head_compliance_red:hover,
+#main-wrapper tr#raw_with_co_it_head_compliance_gold:focus,
+#main-wrapper tr#raw_with_co_it_head_compliance_green:focus,
+#main-wrapper tr#raw_with_co_it_head_compliance_red:focus,
+#main-wrapper tr#raw_with_co_it_head_compliance_gold:active,
+#main-wrapper tr#raw_with_co_it_head_compliance_green:active,
+#main-wrapper tr#raw_with_co_it_head_compliance_red:active{
+ border-right:5px solid #FF3333 !important; 
+ cursor:pointer !important; 
+ padding-right:0px !important;
+}
+
+html#it-risk body.page-node.node-type-webform #main-wrapper #edit-submitted-info-submitter,
+html#it-risk body.page-node.node-type-webform #main-wrapper #edit-submitted-info-quarter,
+html#it-compliance body.page-node.node-type-webform #main-wrapper #edit-submitted-info-submitter,
+html#it-compliance.page-node.node-type-webform #main-wrapper #edit-submitted-info-quarter{
+ background-color:none !important;
+ border:none !important;
+ text-shadow:none !important;
+ border-bottom:5px solid #FCFCFC !important;
+ 
+ min-width:70% !important;
+ cursor:not-allowed !important
+	
+}
+.webform-layout-box.webform-component--info .form-item.webform-component-display.webform-component--info--quarter,
+.webform-layout-box.webform-component--info .form-item.webform-component-display.webform-component--info--submitter{
+ text-transform:uppercase !important;
+}
+.form-item.webform-component.webform-component-display label{text-transform:capitalize !important;}
+#main-wrapper #special-space{
+ margin-top:30px !important;
+ margin-bottom:10px !important;
+	
+}
+#main-wrapper #max_green, 
+#main-wrapper #max_red, 
+#main-wrapper #max_gold{	
+ font-weight:bolder !important;
+ font-size:110% !important;
+ vertical-align:central !important;
+ text-align:center !important;
+ align-content:center !important;
+ color:white !important;
+ opacity:0.9 !important;
+ 
+}
+#main-wrapper #max_green{background-color:green !important} 
+#main-wrapper #max_red{background-color:red !important}
+#main-wrapper #max_gold{background-color:gold !important}
+#main-wrapper .webform-client-form div.webform-component--info{
+ margin-bottom:30px !important
+	
+}
+body.page-user.page-user- #profile-info img,
+div.attribution img{
+ height:auto !important;
+ padding:5px !important;
+ border:10px solid #F3F3F3 !important;
+	
+}
+body.page-user.page-user- #profile-info .information,
+body.page-user.page-user- #profile-info #picture{
+ display:inline-block !important;
+ vertical-align:text-top !important
+	
+}
+body.page-user.page-user- #profile-info #picture{
+ width:20% !important;
+ max-width:20% !important;
+ min-width:20% !important;
+ margin-right:30px !important
+}
+body.page-user.page-user- #profile-info .information{
+ width:75% !important;
+ max-width:75% !important;
+ min-width:75% !important
+}
+body.page-user.page-user- .title-container,
+body.page-user.page-user- .title-page{
+ border:none !important	
+}
+body.page-user.page-user- #profile-info .information div,
+body.page-user.page-user- #profile-role{
+ border-bottom:10px solid #FCFCFC !important;
+ margin-bottom:6px !important;
+ text-transform:capitalize !important;
+ width:auto !important
+
+}
+body.not-front.page-node.page-node-comment.node-type-webform #comments ul.links.inline{
+ display:block !important;
+ text-transform:capitalize !important;
+ padding-top:2px !important;
+ padding-bottom:2px !important;
+ margin-left:-20px !important
+
+
+	
+}
+body.not-front.page-node.page-node-comment.node-type-webform #comments ul.links.inline a{ 
+ margin-left:0px !important;
+ border-bottom:5px solid #FCFCFC !important;
+ padding-bottom:5PX solid !important;	
+}
+#main-wrapper .webform-client-form div.webform-component--section-a,
+#main-wrapper .webform-client-form div.webform-component--section-b,
+#main-wrapper .webform-client-form div.webform-component--section-c,
+#main-wrapper .webform-client-form div.webform-component--section-d,
+#main-wrapper .webform-client-form div.webform-component--section-a *,
+#main-wrapper .webform-client-form div.webform-component--section-b *,
+#main-wrapper .webform-client-form div.webform-component--section-c *,
+#main-wrapper .webform-client-form div.webform-component--section-d *{
+ background-color:none !important;
+ padding-left:5px !important;
+ padding-right:5px !important;
+ max-height:30px !important;
+ border:none !important
+	
+}
+#main-wrapper .webform-client-form div.webform-component--section-a,
+#main-wrapper .webform-client-form div.webform-component--section-b,
+#main-wrapper .webform-client-form div.webform-component--section-c,
+#main-wrapper .webform-client-form div.webform-component--section-d{
+	
+	padding-top:0px !important
+	
+}
+#main-wrapper .webform-client-form div.webform-component--section-a p,
+#main-wrapper .webform-client-form div.webform-component--section-b p,
+#main-wrapper .webform-client-form div.webform-component--section-c p,
+#main-wrapper .webform-client-form div.webform-component--section-c d{	
+ width:100% !important;
+ flex:1 !important;
+ margin-top:0px !important;
+ padding-left:5px !important;
+ padding-right:5px !important;
+ 
+	
+}
+body.page-re-co #main-wrapper .allassessments.risk tr.odd,
+body.page-re-co #main-wrapper .allassessments.risk tr.even,
+body.page-re-se #main-wrapper .allassessments tr.odd,
+body.page-re-se #main-wrapper .allassessments tr.even,
+body.page-re-co #main-wrapper .allassessments.compliance tr.odd,
+body.page-re-co #main-wrapper .allassessments.compliance tr.even{
+ background-color:white !important
+}
+
+#main-wrapper #report-table-tool td#raw_with_rito_risk_gold,
+#main-wrapper #report-table-tool td#raw_with_rito_risk_green,
+#main-wrapper #report-table-tool td#raw_with_rito_risk_red,
+#main-wrapper #report-table-tool td#raw_with_co_it_head_risk_gold,
+#main-wrapper #report-table-tool td#raw_with_co_it_head_risk_green,
+#main-wrapper #report-table-tool td#raw_with_co_it_head_risk_red,
+#main-wrapper #report-table-tool td#raw_with_rito_compliance_gold,
+#main-wrapper #report-table-tool td#raw_with_rito_compliance_green,
+#main-wrapper #report-table-tool td#raw_with_rito_compliance_red,
+#main-wrapper #report-table-tool td#raw_with_co_it_head_compliance_gold,
+#main-wrapper #report-table-tool td#raw_with_co_it_head_compliance_green,
+#main-wrapper #report-table-tool td#raw_with_co_it_head_compliance_red,
+#main-wrapper table#report-table-tool{
+ border:1px solid red !important
+}
+#main-wrapper .webform-client-form div.webform-layout-box.special_width{
+ width:100
+}
+#main-wrapper .webform-client-form .webform-layout-box.equal.webform-component--section-a *,
+#main-wrapper .webform-client-form .webform-layout-box.equal.webform-component--section-b *,
+#main-wrapper .webform-client-form .webform-layout-box.equal.webform-component--section-c *,
+#main-wrapper .webform-client-form .webform-layout-box.equal.webform-component--section-d *,
+#main-wrapper .webform-client-form .webform-layout-box.equal.webform-component--section-a,
+#main-wrapper .webform-client-form .webform-layout-box.equal.webform-component--section-b,
+#main-wrapper .webform-client-form .webform-layout-box.equal.webform-component--section-c,
+#main-wrapper .webform-client-form .webform-layout-box.equal.webform-component--section-d{
+background-color:none !important;
+border:none !important
+
+	
+}
+#main-wrapper span#donoteditthispart{	
+ color:white !important;
+ opacity:0.1 !important;
+}
+#main-wrapper FORM.node-form.node-webform-form div.description{
+ max-width:60% !important	
+}
+
+#main-wrapper .sorting_asc,
+#main-wrapper .sorting_desc,
+#main-wrapper .sorting,
+#main-wrapper .sorting_asc_disabled,
+#main-wrapper .sorting_desc_disabled,
+#main-wrapper th:active {
+cursor:pointer !important 
+}
+div.attribution,
+div.comment-text{
+ display:inline-block !important;
+ margin-top:0px !important;
+ vertical-align:top !important
+	
+}
+
+div.attribution{
+ max-width:10% !important;
+ min-width:10% !important	
+}
+div.comment-text{
+ max-width:89% !important;
+ min-width:89% !important	
+}
+div.attribution img{	
+ width:90% !important;	
+ border-width:3px !important
+}
+span.new{
+	
+	padding:3px !important;
+	color:white !important;
+
+	
+}
+body.page-re-se div.webform-layout-box.webform-component--info{
+ margin-bottom:30px !important;
+ min-width:100% !important;
+ width:100% !important
+}
+body.page-re-se div.webform-layout-box.webform-component--info div.form-item{
+ width:auto !important;
+ display:table-cell !important;
+ padding:10px !important
+ 
+
+}
+body.page-re-se div.webform-layout-box.webform-component--info div.form-item select,
+body.page-re-se div.webform-layout-box.webform-component--info div.form-item label{
+ min-width:180px !important;
+ width:180px !important;	
+}
+body.page-re-se div.webform-layout-box.webform-component--info div.form-item select#edit-submitted-questions{
+
+}
+body.page-re-se div.webform-layout-box.webform-component--info div.form-item select#edit-submitted-levels{
+	
+}
+
+
+body.page-re-se div.webform-layout-box.webform-component--info div.form-item select{
+ background:#FCFCFC !important;
+ border:5px solid #FCFCFC !important;
+ padding:5px !important
+}
+#main-wrapper h2#table_title{
+ font-size:22px !important;
+ color:#B5B5B5 !important	
+}
+body.page-re-se div.webform-layout-box.webform-component--info div.form-item select option{
+
+	
+}
+select,
+select *,
+select * *{
+ font-style:normal !important;
+ text-shadow:none !important;
+ font-weight: 500 !important;
+ font-family: "Myriad Pro", sans-serif;
+ text-shadow: none !important;
+ letter-spacing: normal !important;
+ line-height: 1.562em !important;	
+ font-size:16px !important
+}
+label{
+ font-weight:normal !important	
+}
+html body *,
+html body * *,
+html body * * *,
+html body * * * *,
+html body * * * * *,
+html body * * * * * *,
+html body * * * * * * *,
+html body * * * * * * * *,
+html body * * * * * * * * *{
+ text-shadow:none !important;
+}
+#report-table-tool_filter label{
+ margin-left:10px !important;
+ margin-right:10px !important
+	
+}
+#report-table-tool_filter{
+  
+  padding:5px !important;
+
+ 
+}
+#report-table-tool_filter *,
+#report-table-tool_filter * *{
+ color:lightgray !important;
+ font-family: "Myriad Pro", sans-serif !important;
+}
+#report-table-tool_filter input{
+ border:5px solid #F4F4F4 !important;
+ padding:3px !important;
+ margin-left:10px !important	
+}
+body.page-re-se #main-wrapper table thead tr th{
+ padding-right:5px !important;
+ min-width:100px !important;
+}
+.DTTT_button embed {
+    width: 50px;
+    height: 24px;
+}
+#main-wrapper div.vertical-tabs-panes fieldset legend span,
+#main-wrapper .vertical-tabs-panes fieldset legend span,
+#main-wrapper div.vertical-tabs-panes legend span{
+ margin-right:30px !important
+}
+
+#main-wrapper table.allassessments.compliance tr td:nth-child(2),
+#main-wrapper table.allassessments.compliance tr th:nth-child(2){
+
+ max-width:40% !important;
+ width:40% !important
+	
+}
+body.page-node-comment #main-wrapper #edit-field-submission,
+body.page-node-comment #main-wrapper #edit-field-submission-und-0-value,
+body.page-node-comment #main-wrapper input[readonly=readonly],
+input[name=field_submission[und][0][value]],
+body.page-node-comment #main-wrapper div.field-name-field-submission input,
+*[readonly=readonly]{
+ background:white !important;
+ border:none !important;
+ color:black !important;	
+}
+body #main-wrapper img#show_the_magic{
+ width:25px !important;
+ height:auto !important;
+ border:none !important;
+ border-right:none !important;
+ background:none !important;
+ margin-left:5px !important;
+ vertical-align:central !important
+}
+body #main-wrapper .submit-filters{
+ background-image: url(../images/ajax-loader.gif) !important;
+ background-repeat: no-repeat !important;
+ background-attachment: fixed !important;
+ background-position: center !important;
+ vertical-align:central !important
+	
+}
+
+table.allassessments.sticky-enabled,
+table.allassessments.sticky-enabled td,
+table.allassessments.sticky-enabled th{
+ font-size:15px !important
+	
+}
+table.allassessments.risk.sticky-enabled td:nth-child(6),
+table.allassessments.risk.sticky-enabled th:nth-child(6),
+table.allassessments.risk.sticky-enabled td:nth-child(11),
+table.allassessments.risk.sticky-enabled th:nth-child(11){
+	
+	max-width:80px !important;
+	padding-left:5px !important;
+	margin-left:0px !important;
+	text-align:center !important;
+	padding-left:2px !important
+ 	
+}
+body.html.page-re.page-re-st.reg_global div.home-main-form-links-small.right a,
+body.html.page-re.page-re-st.reg_global div.home-main-form-links-small.right{
+ display:inline-block !important;
+}
+body.html.page-re.page-re-st.reg_global div.home-main-form-links-small.right{
+ max-height:50px !important;
+ min-height:50px !important;
+ overflow:hidden !important	
+}
+body #main-wrapper i.fa{
+ font-family:'FontAwesome' !important;
+ margin-right:10px !important	
+}
+body #main-wrapper i.fa.fa-2x{
+ margin-right:10px !important
+}
+body #main-wrapper i.fa.fa-2x{
+ vertical-align:central !important;
+ float:left !important;
+ margin-top:-6px !important;
+ margin-bottom:-10px !important;	
+ font-size:1.5em !important
+}
+
+#main-wrapper div.home-main-form-links a, 
+#main-wrapper a.home-main-form-link,
+#main-wrapper div.more-link a,
+body.logged-in #main-wrapper .pure-button.pure-button-primary,
+body.logged-in #main-wrapper .pure-button.form-submit,
+body.logged-in #main-wrapper input[type=submit],
+body.logged-in #main-wrapper span#vaain{ 
+ background-color:#4AA8FD !important; 
+ padding:5px !important;
+ padding-left:15px !important;
+ padding-right:15px !important;
+ color:white !important;
+ margin-top:10px !important; 
+ margin-bottom:10px !important; 
+ border:1px solid #4295E0 !important;
+ display: table !important;
+ list-style:none !important;
+ text-transform:capitalize !important
+}
+body.logged-in #main-wrapper .pure-button.pure-button-primary,
+body.logged-in #main-wrapper .pure-button.form-submit,
+body.logged-in #main-wrapper input[type=submit]{
+ display:inline-block !important;
+ list-style:none !important;
+}
+#main-wrapper div.home-main-form-links a{
+ min-width:380px !important;
+ max-width:380px !important;	
+}
+body.logged-in #main-wrapper h2.limit_width,
+body.logged-in #main-wrapper h2#special-space{
+ max-width:40% !important;
+ border:none !important
+}
+body #main-wrapper a[disabled=disabled]{
+ background:#FCFCFC !important;
+ background-color:#FCFCFC !important;	
+}
+body.logged-in #main-wrapper input[disabled=disabled],
+body.logged-in #main-wrapper select[disabled=disabled],
+body.logged-in #main-wrapper form *[disabled=disabled]{
+ background:#FCFCFC !important;
+ background-color:#FCFCFC !important;
+ color:darkgray !important;	
+ border:none !important
+}
+body.logged-in #main-wrapper form.pure-form fieldset.collapsible.form-wrapper,
+body.logged-in #main-wrapper form.pure-form #edit-select-options,
+body.logged-in #main-wrapper form.pure-form legend,
+body.logged-in #main-wrapper form.pure-form legend span.fieldset-legend{
+ min-height:30px !important;
+ border:none !important
+}
+body.logged-in #main-wrapper #block-system-main table.views-table.sticky-enabled thead *{
+ color:white !important	
+}
+body.logged-in #main-wrapper form a#edit-print,
+body.logged-in #main-wrapper form a#edit-print:hover{
+ background:none !important;
+ background-color:none !important;
+ float:right !important;
+ border:none !important;
+ text-decoration:none !important;
+}
+body.logged-in #main-wrapper form div.form-actions{
+ text-align:right !important;
+}
+
+
+#main-wrapper .webform-client-form .webform-layout-box{
+ border-top:2px solid #EFEFEF !important;
+ border-bottom:2px solid #EFEFEF !important;
+ border-right:2px solid #EFEFEF !important;
+ border-left:2px solid #EFEFEF !important;
+ padding:0px !important;
+}
+#main-wrapper .webform-client-form .webform-layout-box.webform-component--info{
+ border-top:3px solid #EFEFEF !important;
+ border-bottom:3px solid #EFEFEF !important;
+ border-left:2px solid #EFEFEF !important;
+ border-right:2px solid #EFEFEF !important;
+}
+
+#main-wrapper .webform-client-form .webform-layout-box.equal.webform-component--info div{
+ min-height:90px !important;
+ max-height:90px !important;
+ padding-top:8px !important;
+}
+#main-wrapper .webform-client-form div.webform-component--columns,
+#main-wrapper .webform-client-form .webform-layout-box.equal.webform-component--columns div,
+#main-wrapper .webform-client-form .webform-layout-box.equal.webform-component--columns p{
+ background:#4AA8FD !important;	
+ color:white !important;
+ border-color:#4AA8FD !important;
+ align-content:center !important;
+ vertical-align:central !important;
+ text-align:center !important;
+}
+#main-wrapper .webform-client-form div.webform-layout-box .form-item.webform-component,
+#main-wrapper .webform-client-form.preview div.webform-layout-box p{
+ border-left:2px solid #EFEFEF !important;
+ border-right:2px solid #EFEFEF !important	
+}
+
+#main-wrapper .webform-client-form div.webform-layout-box:last-child{
+ border-bottom:2px solid #EFEFEF !important;
+}
+html#it-compliance #main-wrapper .webform-client-form.preview .webform-layout-box.webform-component--info .form-item.webform-component label{
+ display:block !important
+}
+html#it-compliance #main-wrapper .webform-client-form.preview .form-item.webform-component label{
+ /*display:none !important	*/
+}
+#main-wrapper fieldset.webform-submission-info.clearfix img{
+ max-width:52px !important;
+ min-width:52px !important;
+ max-height:52px !important;
+ min-height:52px !important;
+}
+
+body #main-wrapper .home-main-form-links a[disabled=disabled],
+body #main-wrapper input[type=button][disabled=disabled],
+body #main-wrapper input[type=submit][disabled=disabled],
+body #main-wrapper div.form-actions input[disabled=disabled]{
+ background:#828282 !important;
+ background-color:#828282 !important;	
+ border-color:#626262 !important
+}
+
+#main-wrapper table tr td.rito_highlight,
+#main-wrapper table tbody tr td.rito_highlight{
+ background-color:#4AA8FD !important;
+ color:#FFFFFF !important;
+ border:1px solid #FFFFFF !important 
+}
+#main-wrapper table tr td.co_it_head_highlight,
+#main-wrapper table tbody tr td.co_it_head_highlight{
+ background-color:#8E9091 !important;
+ color:#FFFFFF !important;
+ border:1px solid #FFFFFF !important ;
+}
+
+body.page-re #main-wrapper table th{
+  padding:5px !important;
+  text-align:center !important	
+}
+
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-a,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-b,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-c,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-d{
+ background:lightgray !important;
+ border-top:1px solid lightgray !important;
+ border-bottom:1px solid lightgray !important;
+ color:#333 !important;
+ align-self:left !important;
+ align-content:left !important;
+ text-align:left !important;
+ vertical-align:central  !important;
+ font-weight:bold !important
+ 
+}
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-a div.form-item,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-b div.form-item,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-c div.form-item,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-d div.form-item,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-a p,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-b p,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-c p,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-d p{
+ background:lightgray !important;
+ align-self:left !important;
+ align-content:left !important;
+ text-align:left !important;
+ vertical-align:central  !important;
+ min-width:100% !important;
+ padding-top:5px !important;
+ border:none !important
+}
+body #main-wrapper div.webform-layout-box.equal.webform-component--columns div:last-child,
+body #main-wrapper div.webform-layout-box.equal.webform-component--columns div:last-child *,
+body #main-wrapper div.webform-layout-box.equal.webform-component--columns div:last-child *,
+body #main-wrapper div.webform-layout-box.equal.webform-component--columns div:last-child *{
+ border-right:none !important;
+
+	
+}
+body #main-wrapper div.webform-layout-box.equal.webform-component--columns div:first-child,
+body #main-wrapper div.webform-layout-box.equal.webform-component--columns div:first-child *,
+body #main-wrapper div.webform-layout-box.equal.webform-component--columns div:first-child *,
+body #main-wrapper div.webform-layout-box.equal.webform-component--columns div:first-child *{
+ border-left:none !important;
+
+}
+body.html.page-re.page-re-co table#report-table-tool tbody tr td,
+body.html.page-re.page-re-co table#report-table-tool thead tr th{
+ padding:10px !important;
+ padding-top:4px !important;
+ padding-bottom:4px !important
+}
+
+body #main-wrapper .webform-client-form div.webform-layout-box.webform-component--columns,
+body #main-wrapper .webform-client-form div.webform-layout-box.webform-component--columns div,
+body #main-wrapper .webform-client-form div.webform-layout-box.webform-component--columns p,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-a div.form-item,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-b div.form-item,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-c div.form-item,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-d div.form-item,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-a p,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-b p,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-c p,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-d p,
+body.page-node #main-wrapper table.allassessments thead tr th{
+ padding:3px !important;
+ max-height:30px !important;
+ vertical-align:middle !important;
+}
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-a div.form-item,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-b div.form-item,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-c div.form-item,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-d div.form-item,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-a p,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-b p,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-c p,
+body #main-wrapper div.webform-layout-box.equal.webform-component--section-d p{
+ padding-left:10px !important;
+ vertical-align:middle !important;
+}
+body.page-node #main-wrapper table.allassessments thead tr th{
+ padding:3px !important;
+ padding-left:20px !important;	
+}
+body #main-wrapper .webform-client-form div.webform-layout-box.webform-component--columns{
+ padding:3px !important	
+}
+body #main-wrapper .webform-client-form .webform-layout-box.child-width-7:not(.webform-component--info) div.form-item:not(.form-type-radio):nth-last-child(2),
+body #main-wrapper .webform-client-form .webform-layout-box.child-width-7:not(.webform-component--info) p:nth-last-child(2),
+body #main-wrapper .webform-client-form .webform-layout-box.child-width-7:not(.webform-component--info) div.form-item.is_color_determine_box:not(.form-type-radio):nth-last-child(2){
+ width:9% !important;
+ max-width:9% !important;
+ min-width:9% !important;
+ padding-top:0px !important;
+}
+.loading_gif{
+ height:20px !important;
+ max-height:20px !important;
+ width:20px !important;
+ max-width:20px !important;
+ margin-left:10px !important
+	
+}
+body #main-wrapper .bg_red,
+body #main-wrapper .bg_green,
+body #main-wrapper .bg_gold{
+ margin:3px !important;
+ color:white !important
+}
+body #main-wrapper .bg_green{
+ background-color:green !important;
+ background:green !important;	
+}
+body #main-wrapper .bg_red{
+ background-color:red !important;
+ background:red !important;	
+}
+body #main-wrapper .bg_gold{
+ background-color:gold !important;
+ background:gold !important;
+}
+
+html#it-risk input#edit-submitted-info-quarter,
+html#it-risk input#edit-submitted-info-submitter,
+html#it-risk input[name=submitted[info][quarter]],
+html#it-risk input[name=submitted[info][submitter]],
+html#it-compliance input#edit-submitted-info-quarter,
+html#it-compliance input#edit-submitted-info-submitter,
+html#it-compliance input[name=submitted[info][quarter]],
+html#it-compliance input[name=submitted[info][submitter]],
+html#it-compliance #edit-submitted-info-submitter,
+html#it-compliance #edit-submitted-info-quarter,
+html#it-risk #edit-submitted-info-submitter,
+html#it-risk #edit-submitted-info-quarter,
+html .webform-client-form #edit-submitted-info-submitter,
+html .webform-client-form #edit-submitted-info-quarter,
+input#edit-submitted-info-submitter,
+input#edit-submitted-info-quarter{
+ text-transform:uppercase !important	
+}
+#main-wrapper .webform-client-form div.webform-layout-box.webform-component--columns .form-item.webform-component p,
+#main-wrapper .webform-client-form div.webform-layout-box.webform-component--columns .form-item.webform-component *{
+ font-weight:bold !important	
+}
+
+body.logged-in #main-wrapper span#vaain{
+ padding-top:2px !important;
+ padding-bottom:2px !important;
+ padding-left:5px !important;
+ padding-right:5px !important;
+ font-size:70% !important;
+ float:right !important;
+ margin-left:-200px !important;
+ margin-top:41px !important;
+ margin-right:22px !important;
+ line-height:normal !important;
+
+
+}
+body.logged-in #main-wrapper span#vaain,
+body #main-wrapper #smaling{
+ opacity: 0.1 !important;
+ cursor:pointer !important;
+ transition: opacity 0.5s;
+-webkit-transition: all ease 0.5s;
+-moz-transition: all ease 0.5s;
+-o-transition: all ease 0.5s;
+-ms-transition: all ease 0.5s ;
+transition: all ease 0.5s ;
+text-transform:lowercase !important
+}
+
+#main-wrapper .webform-client-form input[value=Preview],
+#main-wrapper .webform-client-form input[name=op],
+#main-wrapper .webform-client-form input[type=submit],
+#main-wrapper .webform-client-form .webform-next.button-primary.form-submit{
+ padding-left:50px !important;
+ padding-right:50px !important;
+}
+
+#edit-next:hover #vaain,
+div.form-actions:hover #vaain{
+
+}
+
+#main-wrapper .webform-client-form #vaain:hover,
+body #main-wrapper #smaling:hover{
+ opacity: 1 !important;
+ -webkit-transition: all ease 0.7s;
+-moz-transition: all ease 0.7s;
+-o-transition: all ease 0.7s;
+-ms-transition: all ease 0.7s ;
+transition: all ease 0.5s ;
+z-index:9999999999999999 !important;
+border-top:1px solid #4295E0 !important
+}
+
+#main-wrapper .home-main-form-links-small a:active,
+#main-wrapper .home-main-form-links-small a:hover,
+#main-wrapper .home-main-form-links-small a#rbn:active,
+#main-wrapper .home-main-form-links-small a#rbc:active,
+#main-wrapper .home-main-form-links-small a#rbb:active,
+#main-wrapper .home-main-form-links-small a#rbj:active,
+#main-wrapper .home-main-form-links-small a#rbp:active,
+#main-wrapper .home-main-form-links-small a#rbd:active,
+#main-wrapper .home-main-form-links-small a#rbn:hover,
+#main-wrapper .home-main-form-links-small a#rbc:hover,
+#main-wrapper .home-main-form-links-small a#rbb:hover,
+#main-wrapper .home-main-form-links-small a#rbj:hover,
+#main-wrapper .home-main-form-links-small a#rbp:hover,
+#main-wrapper .home-main-form-links-small a#rbd:hover,
+#main-wrapper .home-main-form-links-small a.coloring_link,
+#main-wrapper .home-main-form-links-small a.coloring_link *,
+#main-wrapper .home-main-form-links-small a.coloring_link:hover,
+#main-wrapper .home-main-form-links-small a.coloring_link:hover *,
+#main-wrapper .home-main-form-links-small a.coloring_link:active,
+#main-wrapper .home-main-form-links-small a.coloring_link:active *,
+#main-wrapper .home-main-form-links-small a:hover,
+#main-wrapper .home-main-form-links-small a:active,
+#main-wrapper .home-main-form-links-small a.coloring_link,
+#main-wrapper .home-main-form-links-small a#coloring_link,
+#main-wrapper .home-main-form-links-small a.coloring_link:link,
+#main-wrapper .home-main-form-links-small a.coloring_link:hover,
+#main-wrapper .home-main-form-links-small a#coloring_link:hover,
+#main-wrapper .home-main-form-links-small a.coloring_link:link,
+#main-wrapper .home-main-form-links-small a.coloring_link:active,
+#main-wrapper .home-main-form-links-small a#coloring_link:active,
+#main-wrapper .view.view-rmtc-results.view-id-rmtc_results a:active{
+ border:none !important;
+ border-bottom:5px solid #4295E0 !important;
+ color:#4295E0 !important;
+
+}
+body #main-wrapper .chart_title{
+ color:lightgray !important	
+}
+
+body #main-wrapper .webform-client-form .webform-layout-box.webform-component--columns div.form-item
+body #main-wrapper .webform-client-form .webform-layout-box.webform-component--columns div.form-item p{
+ padding-left:1px !important;
+ padding-right:1px !important	
+}
+body .small_end_symbol{
+ font-size:70% !important	
+}
+body.page-re.page-re-se div.webform-layout-box.webform-component--info select option{
+
+}
+body.page-re.page-re-se div.webform-layout-box.webform-component--info select
+body.page-re.page-re-se div.webform-layout-box.webform-component--info select *{
+ padding:2px !important
+}
+body #main-wrapper div.view div.view-header .home-main-form-links-small{
+ margin-left:-20px !important;
+ margin-right:-20px !important
+}
+body #main-wrapper form.webform-client-form .webform-layout-box.webform-component--info div.form-item input,
+body #main-wrapper form.webform-client-form .webform-layout-box.webform-component--info div.form-item select{
+ border-bottom:5px solid #FCFCFC !important
+}
+
+body #main-wrapper form.webform-client-form .webform-component--columns div,
+body #main-wrapper form.webform-client-form .webform-component--columns div p{
+
+}
+body #main-wrapper div.webform-layout-box,
+body #main-wrapper div.webform-layout-box div p{
+ overflow:visible !important	
+}
+
+body #main-wrapper #smaling{
+ background:#4AA8FD !important;
+ font-size:12px !important;
+ position: absolute !important;
+ margin-top:-45px !important;
+ margin-left:-57px !important;
+ padding:4px !important;
+ opacity:0.1 !important;
+ cursor: pointer !important;
+ text-transform:lowercase !important;
+ background-color:#4AA8FD !important; 
+ color:white !important;
+ border:1px solid #4295E0 !important;
+ list-style:none !important;
+ padding-bottom:10px !important;
+ border-bottom:none !important;
+ border-left:none !important;
+ border-right:none !important;
+ font-weight:lighter !important
+}
+
+
+body #main-wrapper div.webform-component--columns--risk-exposure,
+body #main-wrapper div.webform-component--columns--risk-exposure p{
+ background:red !important;
+ padding-top:-15px !important;
+}
+
+body #main-wrapper div.view-content div.views-row a,
+body #main-wrapper div.view-content div.views-row a:link,
+body #main-wrapper div.view-content div.views-row a:visited{
+ color:#4AA8FD !important;	
+ font-size:20px !important;
+ font-weight:lighter !important;
+ border-bottom-color:#FCFCFC !important;
+ padding-bottom:4px !important;
+ border-bottom-width:5px !important;
+ 
+}
+body #main-wrapper div.view-content div.views-row a:hover,
+body #main-wrapper div.view-content div.views-row a:active{
+ border-bottom-width:5px !important;
+ padding-bottom:4px !important;
+ border-bottom-color:#4AA8FD !important;
+	
+}
+
+body #main-wrapper div.views-field .views-label,
+body #main-wrapper div.views-field .views-label span.username,
+body #main-wrapper div.views-field .views-label span span,
+body #main-wrapper div.views-field .views-label.views-label-created
+body #main-wrapper div.views-field span.field-content,
+body #main-wrapper div.views-field span.username,
+body #main-wrapper div.views-field.views-field-created span.field-content{
+ font-weight:lighter !important;
+ line-height:normal !important;
+ letter-spacing:normal !important;
+ font-size:14px !important;	
+}
+body #main-wrapper div.views-field .views-label,
+body #main-wrapper div.views-field .views-label span.username,
+body #main-wrapper div.views-field .views-label span span,
+body #main-wrapper div.views-field .views-label.views-label-created
+body #main-wrapper div.views-field span.field-content,
+body #main-wrapper div.views-field.views-field-subject span.field-content{
+ 
+ color:#4AA8FD !important;	
+ text-transform:capitalize !important
+}
+body #main-wrapper div.views-field span.username,
+body #main-wrapper div.views-field.views-field-created span.field-content{
+ font-size:13px !important;
+ color:#313233 !important;
+ background-color:#FCFCFC !important;
+ padding:2px !important;
+ padding-left:10px !important;
+ padding-right:10px !important;
+ font-weight:lighter !important
+}
+body #main-wrapper div.views-field{
+ margin-bottom:8px !important
+}
+body #main-wrapper select[multiple]{
+ overflow-x: hidden !important
+ overflow-y: scroll !important	
+}
+body:not(:-moz-handler-blocked) div.DTTT_container{
+ background:white !important	
+}
+body #main-wrapper div.item-lis ul.pager,
+body #main-wrapper div.item-lis ul.pager *,
+body #main-wrapper div.item-lis ul.pager * *,
+body #main-wrapper div.item-lis ul.pager * * *{
+ padding-bottom:0px !important;
+ margin-top:0px !important;
+ padding-bottom:0px !important;
+ padding-top:0px !important	
+}
+body #main-wrapper form#user-login div.form-item label{
+ display:block !important;
+ font-weight:bold !important;
+ letter-spacing: normal !important;	
+ font-family: "myriad-pro","Myriad Pro","Gill Sans",sans-serif;
+ -webkit-font-smoothing:none !important;	
+ text-rendering:none !important;
+}
+body #main-wrapper div.messages.status{
+ font-family: Georgia,"Times New Roman", Times, serif !important	;
+ font-style:italic !important	
+}
+body #main-wrapper .home-main-form-links.main,
+body #main-wrapper .home-main-form-links.special{
+ display:inline-block !important;
+ max-width:450px !important;
+ min-width:450px !important;
+ margin-right:20px !important
+}
+body #main-wrapper p.special.case em{
+ color:#4AA8FD !important;
+ margin-bottom:-5px !important;
+ margin-top:-5px !important;
+ padding-bottom:0px !important;
+ padding-top:0px !important;
+ line-height:normal !important
+}
+body #main-wrapper div.faq div.faq-description div.home-main-form-links{
+ margin:0px !important;
+ padding:0px !important;
+ margin-top:0px !important;
+ margin-bottom:0px !important
+}
+/*body #main-wrapper div.faq div.faq-description div.home-main-form-links a#myCustomTrigger{
+ max-width:auto !important;
+ min-width:auto	!important;
+ width:auto !important;
+ letter-spacing:normal !important;
+ font-size:18px !important;
+ padding: 0 10px !important;
+ display: block !important;
+ line-height: 36px !important;
+}*/
+/*body #main-wrapper div.inmplayer-trigger,
+body #main-wrapper a#myCustomTrigger,
+body #main-wrapper div.faq div.faq-description a#myCustomTrigger,
+body #main-wrapper a#myCustomTrigger,
+body #main-wrapper div.faq div.faq-description a#myCustomTrigger{
+ font-family: "myriad-pro","Myriad Pro","Gill Sans",sans-serif !important;
+ padding: 0 10px !important;
+ cursor: pointer !important;
+ cursor: hand !important;
+ display: block !important;
+ background: #03a9f4 !important;
+ color: #ffffff !important;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ position: fixed !important;
+ line-height: 36px !important;
+ border: 1px solid #ffffff !important;
+ border-radius:5px !important;
+}*/
+/*body #main-wrapper a#myCustomTrigger,
+body #main-wrapper div.faq div.faq-description a#myCustomTrigger{	
+ position:fixed !important;
+ bottom:3px !important;
+ right:10px !important;
+}*/
+body #main-wrapper #user-guide,
+body #main-wrapper .user-guide{
+ max-width:60% !important	
+}
+
+body #main-wrapper form #edit-print{
+ position:absolute !important;
+ top:5.6% !important;
+ right:5% !important
+}
+body #main-wrapper table.allassessments.risk.sticky-enabled thead tr th:nth-child(4),
+body #main-wrapper table.allassessments.risk.sticky-enabled thead tr th:nth-child(5),
+body #main-wrapper table.allassessments.risk.sticky-enabled thead tr th:nth-child(6),
+body #main-wrapper table.allassessments.risk.sticky-enabled thead tr th:nth-child(7),
+body #main-wrapper table.allassessments.compliance.sticky-enabled thead tr th:nth-child(3),
+body #main-wrapper table.allassessments.compliance.sticky-enabled thead tr th:nth-child(4){
+ /*border:2px solid #80C2FE !important*/
+}
+body #main-wrapper table.allassessments.risk.sticky-enabled thead tr th:nth-child(8),
+body #main-wrapper table.allassessments.risk.sticky-enabled thead tr th:nth-child(9),
+body #main-wrapper table.allassessments.risk.sticky-enabled thead tr th:nth-child(10),
+body #main-wrapper table.allassessments.risk.sticky-enabled thead tr th:nth-child(11),
+body #main-wrapper table.allassessments.compliance.sticky-enabled thead tr th:nth-child(5),
+body #main-wrapper table.allassessments.compliance.sticky-enabled thead tr th:nth-child(6){
+/* border:3px solid #C5E3FE !important*/
+}
+
+body #main-wrapper table.allassessments.compliance.sticky-enabled tbody tr td:nth-child(3),
+body #main-wrapper table.allassessments.risk.sticky-enabled tbody tr td:nth-child(8),
+body #main-wrapper table.allassessments.compliance.sticky-enabled thead tr th:nth-child(3),
+body #main-wrapper table.allassessments.risk.sticky-enabled thead tr th:nth-child(8){
+ border-left-width:4px !important;
+	
+}
+
+body #main-wrapper textarea,
+body #main-wrapper .form-textarea{ 
+ border:none !important;
+ outline:none !important;
+ box-shadow:none !important;
+ padding:0px !important;
+	
+}
+body #main-wrapper textarea:hover,
+body #main-wrapper .form-textarea:hover{ 
+ color:#4AA8FD !important
+}
+body #main-wrapper fieldset.webform-submission-info a[disabled=disabled] img {
+ display:none !important;
+}
+
+
+
+
+
+

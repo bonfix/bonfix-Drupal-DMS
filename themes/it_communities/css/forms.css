@@ -1,0 +1,90 @@
+/*custom form elements*/
+
+#sidebar-first label {
+  font-size: 0.9em;
+  margin-bottom: 0.6em;
+}
+
+#sidebar-first .views-submit-button {
+  text-align: right;
+  display: inline-block;
+}
+#sidebar-first .views-reset-button {
+  text-align: right;
+  display: inline-block;
+}
+
+#sidebar-first input.form-submit,
+#sidebar-first a.button {
+  padding: 0.3em 0.6em;
+  font-size: 0.86em;
+}
+
+#edit-reset {
+  background-color: #eee;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.15);
+  color: #333;
+}
+
+.form-radios input {
+  margin-right: 0.6em;
+}
+.views-widget {
+  margin-bottom: 1.6em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.6em;
+}
+
+.pure-form input[type="text"],
+.pure-form input[type="password"] {
+  color: #555;
+  font-size: .9em;
+  letter-spacing: normal;
+  line-height: 1.4em;
+  padding: .25em 1em;
+  word-spacing: 0px;
+}
+#sidebar-first .pure-form input[type="text"],
+#sidebar-first .pure-form input[type="password"] {
+  width: 100%;
+}
+.search-bar label {
+  display: none;
+}
+.search-bar #edit-search-api-views-fulltext {
+  width: 100%;
+}
+.search-bar .views-widget {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  border: 0px;
+}
+.search-bar .form-item-search-api-views-fulltext {
+  margin: 0px;
+  padding: 0px;
+}
+.search-bar .views-submit-button,
+.search-bar #edit-search-api-views-fulltext-wrapper {
+  display: inline-block;
+}
+.search-bar #edit-search-api-views-fulltext-wrapper {
+  width: 80%;
+}
+.search-bar #edit-submit-wfp-it-search {
+  background: url("../images/icons/icon-sprite.png") no-repeat scroll 3px -198px #4aa8fd;
+  border: 0 none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  height: 29px;
+  text-align: center;
+  text-indent: -9999px;
+  width: 29px;
+  vertical-align: middle;
+}
+.search-bar .views-reset-button {
+  display: none;
+}

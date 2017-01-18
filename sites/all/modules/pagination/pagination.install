@@ -1,0 +1,84 @@
+<?php
+
+/**
+ * Implementation of hook_uninstall().
+ *
+ */
+function pagination_uninstall() {
+  variable_del('pagination_showall');
+  variable_del('pagination_ignore');
+  variable_del('pagination_header');
+  variable_del('pagination_list_type');
+}
+
+
+/**
+ * Implementation of hook_schema().
+ *
+ */
+function pagination_schema() {
+  $schema['pagination'] = array(
+    'description' => t('Extends the {node_type} table with a pagination value.'),
+    'fields' => array(
+      'type' => array(
+          'type'          =>  'varchar',
+          'length'        =>  32,
+          'not null'      =>  TRUE,
+          'description'   =>  t('The {node_type} to enable pagination on.'),
+      ),
+      'paginate' => array(
+          'type'          =>  'int',
+          'unsigned'      =>  TRUE,
+          'not null'      =>  TRUE,
+          'default'       =>  0,
+          'description'   =>  t('The approximate number of words per page while paginating.'),
+      ),
+      'style' => array(
+        'type'        =>  'int',
+        'unsigned'    =>  TRUE,
+        'not null'    =>  TRUE,
+        'default'     =>  0,
+        'description' =>  t('The paging display style.')
+      ),
+    ),
+    'unique keys' => array(
+      'type' => array('type'),
+    ),  
+  );
+  
+  $schema['node_pagination'] = array(
+    'description' => t('Allows storage of page headers for a specific node under automatic paging.'),
+    'fields'      => array(
+      'nid' => array(
+        'type'        => 'int',
+        'unsigned'    => TRUE,
+        'not null'    => TRUE,
+        'default'     => 0,
+        'description' => t('The node id associated with the stored page headers.'),
+      ),
+      'headers' => array(
+        'type'        => 'text',
+        'not null'    => FALSE,
+        'description' => t('A serialized array of headers associated with a specific node id.'),
+      ),
+    ),
+    'unique keys' => array(
+      'nid' => array('nid'),
+    ),
+  );
+  return $schema;
+}
+
+
+/**
+ * Update to D7. Removes previous configurable options "collapsible help text",
+ * "one based pagination", and "filter stale headers" in order to remove
+ * clutter. Defaults of "collapsed", "one based pagination", and "filter stale
+ * headers" are now standard.
+ *
+ */
+function pagination_update_7000() {
+  variable_del('pagination_collapsed');
+  variable_del('pagination_onebased');
+  variable_del('pagination_filter');
+}

@@ -1,0 +1,38 @@
+name = IT_Communities
+description = IT Communities sub-theme
+version = 7.x-dev
+core = 7.x
+engine = phptemplate
+base theme = wfp_base
+
+; CSS includes
+stylesheets[all][] = css/fonts.css
+stylesheets[all][] = css/jquery-ui.css
+stylesheets[all][] = css/grids-units.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/views.css
+stylesheets[all][] = css/blocks.css
+stylesheets[all][] = css/node.css
+stylesheets[all][] = css/user.css
+stylesheets[all][] = css/forms.css
+stylesheets[all][] = css/responsive.tablet.css
+stylesheets[all][] = css/responsive.smartphone.css
+stylesheets[all][] = css/custom.css
+stylesheets[print][] = ../../../modules/wfp/rb_ba/lib/css/print.css
+
+; Regions
+regions[highlighted]  = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[content_bottom] = Content Bottom
+regions[sidebar_first]  = Sidebar first
+regions[sidebar_second] = Sidebar second
+regions[footer] = Footer
+
+; Javascript includes
+scripts[]=js/modernizer.js
+scripts[]=js/loadfonts.js
+scripts[]=js/script.js
+
+
+

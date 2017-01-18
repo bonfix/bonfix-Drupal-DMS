@@ -1,0 +1,480 @@
+/* Custom CSS for Views */
+
+/* Filters */
+.views-exposed-form label {
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.views-exposed-form .views-widget label {
+  font-weight: normal;
+  color: #7a7d7f;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+.views-exposed-widget {
+  clear: both;
+}
+
+/* Generic Elements */
+.view {
+  margin-bottom: 20px;
+}
+
+.view .views-row {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dddddd;
+  color: #7a7d7f;
+  display: block;
+  line-height: 1.25em;
+  font-style: normal;
+  overflow: hidden;
+  padding: 7px 20px 8px 20px;
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+}
+
+.view .views-row.views-row-last,
+.block .row.last {
+  border-bottom: 0;
+}
+.views-field-title h2 {
+  margin: 0.2em 0 0 0;
+  font-size: 1em;
+}
+
+.view .views-row p {
+  margin: 0;
+}
+.view .category {
+  color: #7a7d7f;
+  font-size: 0.813em;
+  font-weight: 600;
+}
+.view .field-category {
+  font-size: 0.9em;
+  font-weight: 700;
+  line-height: 1.25em;
+  margin-bottom: .3em;
+  display: block;
+}
+.view .views-field-field-logo a {
+  border: 0;
+  float: left;
+  margin-right: 15px;
+}
+#block-system-main .views-field.views-field-title,
+#block-system-main h3.views-field.views-field-title {
+  font-size: 1.17em;
+}
+#block-system-main .view .views-field-created {
+  display: inline-block;
+  color: #7a7d7f;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 0.9em;
+}
+#block-system-main .view .views-field-changed {
+  display: inline-block;
+  color: #7a7d7f;
+  font-style: italic;
+  font-weight: normal;
+}
+.view .views-field-name {
+  font-size: 0.9em;
+  color: #7a7d7f;
+  font-weight: 600;
+}
+
+.block-views .views-row .views-field-og-group-ref {
+  font-size: 0.9em;
+  color: #7a7d7f;
+}
+
+#block-system-main .view .views-field-type {
+  font-weight: 600;
+  font-size: 0.9em;
+}
+#block-system-main .view .views-field-body {
+  line-height: 1.2;
+  margin-top: 0.6em;
+}
+#block-system-main .view.view-it-questions-and-posts .views-field-body,
+#block-system-main .view.view-it-questions-and-posts .views-field-body-1,
+.region-content-bottom .view.view-it-questions-and-posts .views-field-body,
+.region-content-bottom .view.view-it-questions-and-posts .views-field-body-1 {
+  margin-left: 75px;
+  font-size: .9em;
+  font-style: italic;
+}
+#block-system-main .view.view-it-questions-and-posts .views-field-body blockquote,
+#block-system-main .view.view-it-questions-and-posts .views-field-body-1 blockquote,
+.region-content-bottom .view.view-it-questions-and-posts .views-field-body blockquote,
+.region-content-bottom .view.view-it-questions-and-posts .views-field-body-1 blockquote {
+  margin-top: 0.15em;
+  margin-bottom: 0.8em;
+  font-size: 0.9em;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  padding: 0.6em .8em;
+  border-left: 5px solid #dadada;
+  font-family: inherit;
+  line-height: 120%;
+  border-radius: 0 5px 5px 0;
+}
+#block-system-main .view .views-field-author {
+  font-size: 0.9em;
+}
+
+#block-system-main .view .views-field-field-api-position {
+  font-size: 0.9em;
+}
+
+#block-system-main .view .views-field-field-api-duty-station {
+  font-size: 0.9em;
+}
+
+#block-system-main .view .views-field-field-api-phone-numbers {
+  font-size: 0.9em;
+}
+
+#block-system-main .view .views-field-field-api-email-addresses {
+  font-size: 0.9em;
+}
+
+.view-users-og-groups .views-field-type,
+.view-follow-flags .views-field-type {
+  color: #7a7d7f;
+  float: right;
+  font-size: .85em;
+  font-weight: 400;
+  margin: 2px 12px 0 10px;
+}
+
+/*Team members view*/
+.view-wfp-it-users-og-members:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.view-wfp-it-users-og-members {
+  background-color: #fafafa;
+  border-bottom: 1px solid #ecf0f1;
+  padding-bottom: 0;
+  min-height: 142px;
+}
+.view-wfp-it-users-og-members .views-row {
+  width: 16.6667%;
+  float: left;
+  text-align: center;
+  background-color: #fafafa;
+  border-bottom: 0 solid #dddddd;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-top: 0;
+}
+.view-wfp-it-users-og-members .views-row administrator.member {
+  background-color: #ecf0f1;
+}
+
+
+.block-views .view-wfp-it-users-og-members .views-row {
+  border-bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+.view-wfp-it-users-og-members .views-row .views-field-view-user img {
+  width: 80px !important;
+  height: 80px !important;
+  display: block;
+  margin: auto;
+  margin-bottom: 7px;
+}
+.view-wfp-it-users-og-members .views-row .views-field-view-user a {
+  display: block;
+  padding-top: 10px;
+  line-height: 1.2;
+  padding-bottom: 5px;
+  font-weight: normal;
+  font-size: 15px;
+  border-bottom: 3px solid transparent;
+}
+.view-wfp-it-users-og-members .views-row .views-field-view-user a:hover {
+  border-bottom: 3px solid #4aa8fd;
+  background-color: #ecf0f1;
+}
+/**/
+
+/*view-it-message*/
+.view-it-message.view-display-id-home_page {
+  margin-bottom: 20px;
+}
+.view-it-message.view-display-id-home_page .views-row {
+  background-color: #fafafa;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 1px;
+  padding-bottom: 6px;
+  padding-top: 8px;
+}
+.view-it-message.view-display-id-home_page .views-row p {
+  margin: 0;
+}
+.view-it-message.view-display-id-home_page .views-row a {
+  border: 0;
+  font-weight: 600;
+}
+.view-it-message.view-display-id-home_page .views-row a:hover {
+  color: #3b86ca;
+}
+.view-it-message.view-display-id-home_page .views-row .views-field-created {
+  color: #939598;
+  font-size: 0.938em;
+  font-style: italic;
+  font-weight: normal;
+}
+.view-it-message p>img {
+  display: block;
+  margin: 1em 0;
+}
+.view-it-message h3 {
+  line-height: 1.5em;
+}
+/**/
+.view-it-questions-and-posts .views-field-type,
+.view-it-shared-posts .views-field-type {
+  width: 60px;
+  height: auto;
+  display: inline-block;
+  float: left;
+  margin-right: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+.view .views-field-type .ico_answers_question:before,
+.view .views-field-type .ico_shared_post:before {
+  content: "";
+  background: url("../images/icons/icon-sprite.png") no-repeat scroll 0 0 transparent;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.view .views-field-type .ico_shared_post:before {
+  background-position: 2px -247px;
+}
+.view .views-field-type .ico_answers_question:before {
+  background-position: 2px -297px;
+}
+
+.view-it-questions-and-posts .views-field-name,
+.view-it-questions-and-posts .views-field-name *,
+.view-it-shared-posts .views-field-name,
+.view-it-shared-posts .views-field-name * {
+  display: inline-block;
+  line-height: 1.1;
+}
+.view-it-questions-and-posts .views-field-created,
+.view-it-questions-and-posts .views-field-created *,
+.view-it-shared-posts .views-field-created,
+.view-it-shared-posts .views-field-created * {
+  display: inline-block;
+}
+
+.view-it-questions-and-posts .view-empty {
+  margin-bottom: 5px;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+
+/*People list*/
+.view-people table .views-field-name,
+.view-wfp-it-users-og-members table .views-field-name {
+  text-align: left;
+}
+.view-people table .views-field-name a,
+.view-wfp-it-users-og-members table .views-field-name a {
+  color: #4aa8fd;
+  font-weight: 600;
+  text-align: left;
+  border: 0 none;
+}
+.view-people table .views-field-name:hover,
+.view-wfp-it-users-og-members table .views-field-name:hover {
+  color: #3b86ca;
+}
+.view-people table .views-field-picture,
+.view-wfp-it-users-og-members table .views-field-picture {
+  text-align: center;
+}
+.view-people table .views-field-picture img,
+.view-wfp-it-users-og-members table .views-field-picture img {
+  height: 30px;
+  width: 30px;
+}
+
+/*view-id-it_message*/
+.view-id-it_message .view-empty {
+  margin-bottom: 5px;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+
+/*SEARCH*/
+.view-display-id-search_content .views-row {
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 0.6em;
+  padding-bottom: 0.6em;
+  width: 100%;
+}
+
+
+/**/
+.view-solution-general.view-display-id-all_solution_page .view-header h2,
+.view-solution-general.view-display-id-all_solution_page .view-empty h2 {
+  border-bottom: 3px solid #939598;
+  color: #939598;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin-bottom: 1em;
+  margin-top: 10px;
+}
+
+.view-solution-general.view-display-id-featured_solutions_block .views-row {
+  width: 48%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.view-solution-general.view-display-id-featured_solutions_block .views-row.views-row-last {
+  border-bottom: 1px solid #dddddd;
+}
+
+
+#views-exposed-form-solution-general-all-solution-page .bef-select-as-radios ul {
+  padding-left: 0;
+}
+#views-exposed-form-solution-general-all-solution-page .bef-select-as-radios li {
+  list-style: none;
+}
+#views-exposed-form-solution-general-all-solution-page .bef-tree-child.bef-tree-depth-1 {
+  display: none;
+}
+#views-exposed-form-solution-general-all-solution-page .bef-tree-child.bef-tree-depth-1 {
+  display: none;
+}
+.page-search-content .chosen-container {
+  width: 100% !important;
+}
+.view-display-id-page_referenced_updates .views-field-title,
+.view-display-id-page_referenced_documents .views-field-title,
+.view-display-id-page_referenced_questions_posts .views-field-title {
+  font-weight: 600;
+}
+#block-system-main .view-it-questions-and-posts .views-field-type {
+  font-size: 12px;
+}
+
+.view-itc-people-subscriptions.view-display-id-page_people_following .view-content {
+  margin: 1em 0;
+}
+.rate-widget-home {
+  display: inline-block;
+  background: url(../images/icons/thumbs.png) no-repeat 0 0;
+  width: 24px;
+  height: 24px;
+  text-indent: -9999px;
+}
+#ajax_message {
+  color: red;
+}
+.views-field-message-render p {
+  vertical-align: top;
+}
+.views-field-message-render a {
+  vertical-align: top;
+  display: inline;
+}
+span.views-field.views-field-message-render blockquote p a {
+  display: inline-block;
+}
+.view-it-message .views-row blockquote {
+  font-style: italic;
+  padding-left: 0.7em;
+  margin: 0.5em 0 0.75em 55px;
+  color: #666;
+  border-left: 3px solid #dadada;
+  font-family: inherit;
+  font-size: .9em;
+  line-height: 1.3em;
+}
+.view-it-message .views-row blockquote img {
+  max-width: 600px;
+  max-height: 300px;
+}
+.message-comment-count,
+.message-answers-total {
+  margin-left: 55px;
+  height: 22px;
+  font-size: .85em;
+  vertical-align: middle;
+}
+.message-follow-button {
+  font-size: .65em;
+  text-transform: uppercase;
+  margin-left: .5em;
+}
+.views-field-value,
+.views-field-timestamp {
+  margin-left: 55px;
+  font-size: .82em;
+}
+.views-field-timestamp {
+  color: #aaa;
+  margin-top: 0.3em;
+}
+.views-field-value * {
+  vertical-align: bottom;
+}
+.views-field-value .field-content {
+  display: inline-block;
+}
+.message-follow-button a {
+  background-color: #ecf0f1;
+  box-shadow: none;
+  color: #616263;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 0.4em 0.6em 0.1em 0.6em;
+  transition: all 0.1s ease-in 0s;
+  display: inline-block;
+  line-height: 1.2em;
+  vertical-align: top;
+  margin-top: -.1em;
+}
+.message-answers-total:before,
+.message-comment-count:before {
+  background: url("../images/icons/icon-sprite.png") no-repeat scroll 0 0 transparent;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 22px;
+}
+.message-answers-total:before {
+  margin: 0 auto;
+  background-position: 2px -301px;
+}
+.message-comment-count:before {
+  margin: -9px auto;
+  background-position: 2px -902px;
+}

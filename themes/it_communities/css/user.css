@@ -1,0 +1,117 @@
+/*user elements*/
+
+.user-picture img {
+  width: 30px;
+  height: 30px;
+}
+.user-picture,
+.page-user #main .view-it-message .user-picture {
+  margin-left: 5px;
+  display: inline-block;
+  margin-right: 5px;
+  float: none;
+}
+.user-picture:first-of-type,
+.page-user #main .view-it-message .user-picture:first-of-type {
+  float: left;
+  margin-right: 10px;
+  margin-left: 0;
+}
+.page-user #content .view-it-message .user-picture img,
+#content .user-picture img {
+  height: 45px;
+  width: 45px;
+}
+#content .view-people-list .user-picture img {
+  max-width: 45px;
+}
+/*page user*/
+.page-user #profile-info {
+  font-size: 16px;
+}
+.page-user #profile-info .image {
+  float: left;
+  margin-right: 15px;
+}
+.page-user #profile-info .information {
+  overflow: hidden;
+  padding-top: 10px;
+}
+.page-user #profile-info .information .row {
+  color: #939598;
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+}
+.page-user #profile-info .information .row .label {
+  color: #333333;
+  font-weight: 600;
+}
+.page-user #profile-role {
+  border-top: 1px solid #e8e8ef;
+  clear: both;
+  float: left;
+  margin: 20px 0;
+  padding: 15px 0;
+  width: 100%;
+}
+.page-user #profile-role h3 {
+  color: #2c3e50;
+  float: none;
+  font-size: 23px;
+}
+.page-user #profile-role .deployment {
+  color: #939598;
+  float: right;
+  line-height: 40px;
+}
+.page-user #profile-role .deployment label {
+  font-weight: normal;
+}
+.page-user #profile-role .deployment input {
+  margin-right: 10px;
+}
+
+.page-user .field-name-field-api-first-name,
+.page-user .field-name-field-api-last-name {
+  display: inline-block;
+  vertical-align: middle;
+}
+.page-user .flag-outer.flag-outer-user-flag {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.page-user #content .user-picture img {
+  width: 80px;
+  height: 80px;
+}
+.page-user #main .user-picture {
+  float: left;
+  margin-left: 0px;
+  margin-right: 15px;
+}
+.page-user h1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+.page-user .field-name-field-api-position {
+  font-weight: 400;
+  line-height: 34px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 2px;
+  text-transform: none;
+  color: #2c3e50;
+  font-size: 1.6em;
+}
+
+.page-user .field-name-field-skills .field-item {
+  display: inline;
+  margin-right: 0.8em;
+}
+
+.region-sidebar-first .chosen-container {
+  width: 100% !important;
+}
